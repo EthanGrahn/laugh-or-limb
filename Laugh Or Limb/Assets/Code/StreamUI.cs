@@ -7,7 +7,6 @@ using TMPro;
 public class StreamUI : MonoBehaviour
 {
     public VerticalLayoutGroup chatGroup;
-    public ChatMessage testMessage;
     public GameObject messagePrefab;
 
     private StreamChatter[] chatters;
@@ -26,7 +25,7 @@ public class StreamUI : MonoBehaviour
             GameObject prefab = Instantiate(messagePrefab, chatGroup.transform);
             StreamChatter chatter = chatters[Random.Range(0, chatters.Length)];
             prefab.GetComponent<ChatMessage>().InitMessage(chatter, StreamChatter.Sentiment.POSITIVE);
-            yield return new WaitForSeconds(Random.Range(0.1f, 1.3f));
+            yield return new WaitForSeconds(Random.Range(2f, 4f));
         }
     }
 }

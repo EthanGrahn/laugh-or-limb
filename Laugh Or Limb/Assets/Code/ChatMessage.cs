@@ -14,4 +14,12 @@ public class ChatMessage : MonoBehaviour
 
         m_TextMeshPro.text = string.Format(FORMAT_STRING, "#" + chatter.color.ToHexString(), chatter.chatterName, message);
     }
+
+    private void Update()
+    {
+        if (transform.localPosition.y >= 100f)
+        {
+            Destroy(gameObject);
+        }
+    }
 }
