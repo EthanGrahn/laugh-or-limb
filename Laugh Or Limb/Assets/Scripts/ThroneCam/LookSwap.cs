@@ -5,6 +5,7 @@ using Cinemachine;
 
 public class LookSwap : MonoBehaviour
 {
+    private Transform initialLook;
     private CinemachineDollyCart cart;
     [SerializeField]
     private CinemachineVirtualCamera cam;
@@ -17,6 +18,13 @@ public class LookSwap : MonoBehaviour
     private void Start()
     {
         cart = GetComponent<CinemachineDollyCart>();
+        initialLook = cam.LookAt;
+        //OpenDoor.Fall += Continue;
+    }
+
+    private void OnDisable()
+    {
+        //OpenDoor.Fall -= Continue;
     }
 
     void Update()
@@ -38,8 +46,12 @@ public class LookSwap : MonoBehaviour
         }
         else if(cart.m_Position >= 2 && dropTime)
         {
-            cart.m_Speed = .5f;
+            cart.m_Speed = .2f;
             lookAtTarget.m_Speed = 1.5f;
+        }
+        if(cart.m_Position > 2.5)
+        {
+            cam.LookAt = initialLook;
         }
     }
 

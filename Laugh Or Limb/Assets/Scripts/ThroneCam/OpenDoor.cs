@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class OpenDoor : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class OpenDoor : MonoBehaviour
     private AnimationCurve aCurve;
     [SerializeField]
     private float speed;
+
+    public static Action Fall = delegate { };
     private void OnEnable()
     {
         LookPause.OPENDOORS += Open;
@@ -35,5 +38,7 @@ public class OpenDoor : MonoBehaviour
             x += Time.deltaTime * speed;
             yield return new WaitForEndOfFrame();
         }
+        yield return new WaitForSeconds(2);
+        Fall();
     }
 }
