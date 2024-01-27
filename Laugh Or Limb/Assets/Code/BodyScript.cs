@@ -7,7 +7,7 @@ public class BodyScript : MonoBehaviour
 {
     public Rigidbody2D body, head;
     public float power = 100f;
-    public float gravity = -40f;
+    public float gravity = 40f;
     bool launched = false;
     GameObject arrow;
 
@@ -36,9 +36,6 @@ public class BodyScript : MonoBehaviour
         {
             body.bodyType = RigidbodyType2D.Dynamic;
             head.bodyType = RigidbodyType2D.Dynamic;
-
-            body.mass = 5;
-            head.mass = 5;
 
             Vector3 mousePos = Input.mousePosition;
             Vector2 direction = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, Camera.main.nearClipPlane)) - body.transform.position;
