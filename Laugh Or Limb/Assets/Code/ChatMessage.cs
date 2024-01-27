@@ -8,6 +8,13 @@ public class ChatMessage : MonoBehaviour
 {
     const string FORMAT_STRING = "<color={0}>{1}:</color> {2}";
     [SerializeField] private TextMeshProUGUI m_TextMeshPro;
+    private RectTransform m_RectTransform;
+
+    private void Start()
+    {
+        m_RectTransform = GetComponent<RectTransform>();
+    }
+
     public void InitMessage(StreamChatter chatter, StreamChatter.Sentiment sentiment)
     {
         string message = chatter.GetRandomResponse(sentiment);
@@ -17,7 +24,7 @@ public class ChatMessage : MonoBehaviour
 
     private void Update()
     {
-        if (transform.localPosition.y >= 100f)
+        if (m_RectTransform.anchoredPosition.y >= -300f)
         {
             Destroy(gameObject);
         }
