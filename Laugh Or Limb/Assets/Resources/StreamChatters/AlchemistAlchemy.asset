@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 127763612cddcdd4aaa0f9faf40a2d38, type: 3}
-  m_Name: YeOldDragonSlayer 1
+  m_Name: AlchemistAlchemy
   m_EditorClassIdentifier: 
-  chatterName: YeOldDragonSlayer
+  chatterName: AlchemistAlchemy
   color: {r: 0, g: 0, b: 1, a: 1}
   positiveResponses:
-  - I begrudgingly admit, the jester's jests are as sharp as my blade. Well played!
+  - Jester, begin thy japes, and let joy fill our halls!
   neutralResponses:
-  - Prithee, I smote the dragon with a critical hit! #EpicQuest
+  - "\U0001F9EA Brewing potions and elixirs in my alchemy lab. Any requests, kind
+    souls?"
   negativeResponses:
-  - Methinks this jester better be worth my time. I've seen funnier donkeys.
+  - I'll be impressed if this jester can outwit a court jester from yonder kingdom!
