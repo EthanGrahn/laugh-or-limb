@@ -9,7 +9,7 @@ public class Movement : MonoBehaviour
     [SerializeField]
     private Rigidbody2D rBody;
     [SerializeField]
-    private float incSpeed, currSpeed, minSpeed, maxSpeed;
+    private float incSpeed, currSpeed, minSpeed, maxSpeed, retSpeed;
     private bool bAdjust = false, bSlow = false;
     
 
@@ -50,7 +50,7 @@ public class Movement : MonoBehaviour
     private IEnumerator AdjustSpeed()
     {
         bAdjust = true;
-        rBody.AddForce(transform.right * currSpeed);
+        rBody.AddForce(transform.right * currSpeed, ForceMode2D.Impulse);
         yield return new WaitForSeconds(0.1f);
         bAdjust = false;
     }
@@ -59,9 +59,9 @@ public class Movement : MonoBehaviour
         bSlow = true;
 
         if (currSpeed > 0)
-            currSpeed -= 0.5f;
+            currSpeed -= retSpeed;
         else if (currSpeed < 0)
-            currSpeed += 0.5f;
+            currSpeed += retSpeed;
 
         yield return new WaitForSeconds(0.3f);
         bSlow = false;
