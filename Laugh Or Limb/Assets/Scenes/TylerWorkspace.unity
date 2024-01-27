@@ -420,7 +420,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 7
 --- !u!1 &150003042
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,7 +778,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 261368585}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -1253,7 +1253,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 674509538}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -2095,7 +2095,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 910340999}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -2337,6 +2337,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1159527929}
+  - component: {fileID: 1159527930}
   m_Layer: 0
   m_Name: Jestor
   m_TagString: Untagged
@@ -2369,6 +2370,20 @@ Transform:
   - {fileID: 20732980}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1159527930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1159527928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9defe35e30234d84594255ef4d4379df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  body: {fileID: 1637682920}
+  head: {fileID: 674509540}
 --- !u!1 &1408265237
 GameObject:
   m_ObjectHideFlags: 0
@@ -2417,8 +2432,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 347d61359ec33fa40a171ddd274cc1e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftSide: {fileID: 261368585}
-  rightSide: {fileID: 910340999}
+  leftDoor: {fileID: 261368590}
+  rightDoor: {fileID: 910341003}
 --- !u!1 &1548215741
 GameObject:
   m_ObjectHideFlags: 0
@@ -2608,7 +2623,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1637682916}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
