@@ -12,6 +12,7 @@ public class LookSwap : MonoBehaviour
     private CinemachineDollyCart lookAtTarget;
     private bool hasPaused = false;
     public bool dropTime = false;
+    private bool hasSwapped = false;
 
     private void Start()
     {
@@ -20,10 +21,11 @@ public class LookSwap : MonoBehaviour
 
     void Update()
     {
-        if(cart.m_Position >= 1 && cart.m_Position <2)
+        if(cart.m_Position >= 1 && cart.m_Position <2 && !hasSwapped)
         {
             cam.LookAt = lookAtTarget.transform;
             lookAtTarget.m_Speed = .5f;
+            hasSwapped = true;
         }
         else if(cart.m_Position >=2 && !hasPaused)
         {
@@ -36,8 +38,8 @@ public class LookSwap : MonoBehaviour
         }
         else if(cart.m_Position >= 2 && dropTime)
         {
-            //cart.m_Speed = .5f;
-            //lookAtTarget.m_Speed = 1.5f;
+            cart.m_Speed = .5f;
+            lookAtTarget.m_Speed = 1.5f;
         }
     }
 
