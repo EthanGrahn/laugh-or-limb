@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class CameraLock : MonoBehaviour
 {
-    public GameObject camera;
+    public GameObject item;
     public GameObject body;
+    public float distance = -40f;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,6 @@ public class CameraLock : MonoBehaviour
     void Update()
     {
         //camera.transform.rotation = Quaternion.identity;
-        camera.transform.position = new Vector3(body.transform.position.x, body.transform.position.y, -40f);
+        item.transform.position = new Vector3(body.transform.position.x, body.transform.position.y, distance);
     }
 }
