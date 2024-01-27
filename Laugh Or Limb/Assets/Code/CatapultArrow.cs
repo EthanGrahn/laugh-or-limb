@@ -1,27 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CatapultArrow : MonoBehaviour
 {
-    public Transform body;
-    public GameObject mouseTracker;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    public float maxTurnSpeed = 90;
-    public float smoothTime = 0.3f;
-    float angle;
-    float currentVelocity;
     void Update()
     {
-        var mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        mouseWorldPos.z = 0f; // zero z
-        transform.position = mouseWorldPos;
-        Debug.Log(mouseWorldPos);
+        if (Input.GetMouseButtonDown(0))
+        {
+            gameObject.SetActive(false);
+            return;
+        }
+
+        Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);
+        Vector3 dir = Input.mousePosition - pos;
+        float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
     }
 }

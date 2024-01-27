@@ -10,6 +10,8 @@ public class BodyScript : MonoBehaviour
     public float power = 100f;
     public float gravity = 40f;
 
+    private bool launched = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,8 +29,9 @@ public class BodyScript : MonoBehaviour
         }
 
         //Launch In direction
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !launched)
         {
+            launched = true;
             body.bodyType = RigidbodyType2D.Dynamic;
             head.bodyType = RigidbodyType2D.Dynamic;
 
