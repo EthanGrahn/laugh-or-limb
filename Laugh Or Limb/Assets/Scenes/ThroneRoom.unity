@@ -240,6 +240,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c1e8511997d781849a2536994ecc180e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 72649497137d04341ba05e9a50edbac4, type: 2}
     - target: {fileID: 919132149155446097, guid: c1e8511997d781849a2536994ecc180e, type: 3}
       propertyPath: m_Name
       value: Roof (1)
@@ -418,6 +422,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 928e72bd8292b1f4e80a74cc287cc351, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 18420f56707851b48b54d592e63e016a, type: 2}
     - target: {fileID: 919132149155446097, guid: 928e72bd8292b1f4e80a74cc287cc351, type: 3}
       propertyPath: m_Name
       value: ThronePlatform
@@ -915,6 +923,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2191a18e70a71cc47a2c688c4b41f1f4, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 07cdbf74db4102e4c86c5096bbff88ff, type: 2}
     - target: {fileID: 919132149155446097, guid: 2191a18e70a71cc47a2c688c4b41f1f4, type: 3}
       propertyPath: m_Name
       value: Floor
@@ -976,6 +988,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: c1e8511997d781849a2536994ecc180e, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 72649497137d04341ba05e9a50edbac4, type: 2}
     - target: {fileID: 919132149155446097, guid: c1e8511997d781849a2536994ecc180e, type: 3}
       propertyPath: m_Name
       value: Roof
@@ -999,7 +1015,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 445635b3dc28fa74292347afe7588f38, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.302444
+      value: 8.063
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 445635b3dc28fa74292347afe7588f38, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1037,6 +1053,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 445635b3dc28fa74292347afe7588f38, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 70fa34013f287e94f927ca7559534fa8, type: 2}
     - target: {fileID: 919132149155446097, guid: 445635b3dc28fa74292347afe7588f38, type: 3}
       propertyPath: m_Name
       value: Throne
