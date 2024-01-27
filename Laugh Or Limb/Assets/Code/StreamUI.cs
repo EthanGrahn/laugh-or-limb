@@ -7,7 +7,6 @@ using TMPro;
 public class StreamUI : MonoBehaviour
 {
     public VerticalLayoutGroup chatGroup;
-    public ChatMessage testMessage;
     public GameObject messagePrefab;
 
     private StreamChatter[] chatters;
@@ -15,14 +14,18 @@ public class StreamUI : MonoBehaviour
     void Start()
     {
         chatters = Resources.LoadAll<StreamChatter>("StreamChatters");
+        StartCoroutine(ChatMessages());
     }
 
-    void Update()
+    private IEnumerator ChatMessages()
     {
-        if (Input.GetKeyDown(KeyCode.H))
+        yield return new WaitForSeconds(3);
+        while (gameObject.activeInHierarchy)
         {
             GameObject prefab = Instantiate(messagePrefab, chatGroup.transform);
-            prefab.GetComponent<ChatMessage>().InitMessage(chatters[0], StreamChatter.Sentiment.POSITIVE);
+            StreamChatter chatter = chatters[Random.Range(0, chatters.Length)];
+            prefab.GetComponent<ChatMessage>().InitMessage(chatter, StreamChatter.Sentiment.POSITIVE);
+            yield return new WaitForSeconds(Random.Range(2f, 4f));
         }
     }
 }
