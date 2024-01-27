@@ -7,7 +7,7 @@ public class Movement : MonoBehaviour
 {
     PlayerInput pInput;
     [SerializeField]
-    private Rigidbody rBody;
+    private Rigidbody2D rBody;
     [SerializeField]
     private float incSpeed, currSpeed, minSpeed, maxSpeed;
     private bool bAdjust = false, bSlow = false;
