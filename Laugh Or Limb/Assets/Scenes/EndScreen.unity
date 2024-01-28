@@ -718,6 +718,14 @@ PrefabInstance:
       propertyPath: m_BodyType
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4695668919386794753, guid: 85f36159ee0b5e543b789a8d3073aa68, type: 3}
+      propertyPath: nArrow
+      value: 
+      objectReference: {fileID: 1467753306}
+    - target: {fileID: 4695668919386794753, guid: 85f36159ee0b5e543b789a8d3073aa68, type: 3}
+      propertyPath: finalCannonPos
+      value: 
+      objectReference: {fileID: 1727848348}
     - target: {fileID: 4974449659628303544, guid: 85f36159ee0b5e543b789a8d3073aa68, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
@@ -1723,6 +1731,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410407532}
   m_CullTransparentMesh: 1
+--- !u!1 &1467753306 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6454907141363919552, guid: 85f36159ee0b5e543b789a8d3073aa68, type: 3}
+  m_PrefabInstance: {fileID: 604148561}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1569340819
 GameObject:
   m_ObjectHideFlags: 0
@@ -1992,6 +2005,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1655457695}
   m_CullTransparentMesh: 1
+--- !u!1 &1727848348 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 436726837468721364, guid: 85f36159ee0b5e543b789a8d3073aa68, type: 3}
+  m_PrefabInstance: {fileID: 604148561}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2044113361
 GameObject:
   m_ObjectHideFlags: 0
