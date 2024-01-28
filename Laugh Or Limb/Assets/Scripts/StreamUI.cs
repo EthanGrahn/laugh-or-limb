@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Events;
 
 public class StreamUI : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class StreamUI : MonoBehaviour
     private List<StreamChatter> positiveChatters = new List<StreamChatter>();
     private List<StreamChatter> neutralChatters = new List<StreamChatter>();
     private List<StreamChatter> negativeChatters = new List<StreamChatter>();
+
+    public UnityEvent<int> OnSentimentChange = new UnityEvent<int>();
 
     void Start()
     {
@@ -49,10 +52,13 @@ public class StreamUI : MonoBehaviour
         switch (sentiment)
         {
             case StreamChatter.Sentiment.POSITIVE:
+                OnSentimentChange.Invoke(4);
                 return positiveChatters[Random.Range(0, positiveChatters.Count)];
             case StreamChatter.Sentiment.NEUTRAL:
+                OnSentimentChange.Invoke(0);
                 return neutralChatters[Random.Range(0, neutralChatters.Count)];
             case StreamChatter.Sentiment.NEGATIVE:
+                OnSentimentChange.Invoke(1);
                 return negativeChatters[Random.Range(0, negativeChatters.Count)];
             default:
                 return null;
