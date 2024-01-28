@@ -840,8 +840,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9defe35e30234d84594255ef4d4379df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  body: {fileID: 2809831026492293934}
-  head: {fileID: 4073788849579529896}
+  body: {fileID: 4073788849579529896}
+  head: {fileID: 2809831026492293934}
   power: 1000
   gravity: 40
 --- !u!114 &5281256784520460417
@@ -856,12 +856,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 168bcd7b393e6af438afcb4605a0e868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rBody: {fileID: 0}
-  incSpeed: 0
+  rBody: {fileID: 4073788849579529896}
+  incSpeed: 4
   currSpeed: 0
-  minSpeed: 0
-  maxSpeed: 0
-  retSpeed: 0
+  minSpeed: -16
+  maxSpeed: 16
+  retSpeed: 2
 --- !u!114 &632007868699431245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -874,7 +874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a8cf364db269ee4b9006e0ad9376540, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DisplayScore: {fileID: 0}
+  DisplayScore: {fileID: 1297840319796848221}
   currPoints: 0
 --- !u!1 &2636172074935472905
 GameObject:

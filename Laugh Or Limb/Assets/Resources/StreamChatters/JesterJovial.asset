@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 127763612cddcdd4aaa0f9faf40a2d38, type: 3}
+  m_Name: JesterJovial
+  m_EditorClassIdentifier: 
+  chatterName: JesterJovial
+  color: {r: 0, g: 0, b: 1, a: 1}
+  positiveResponses:
+  - This jester never fails to amuse! Clowns of yore would envy such jesting prowess.
+  neutralResponses:
+  - "Ho ho! Make merry, for the stream be filled with joy and laughter! \U0001F921\U0001F3AD"
+  negativeResponses:
+  - Ah, a heckler in the midst! Fear not, I shall jest my way into thy heart!

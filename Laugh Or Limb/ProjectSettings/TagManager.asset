@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Wall
   - Trap
+  - KingStream
+  - Bounce
   layers:
   - Default
   - TransparentFX
