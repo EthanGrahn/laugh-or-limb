@@ -13,4 +13,6 @@ public class ThronePivot : MonoBehaviour
         float newy = transform.rotation.eulerAngles.y + 180;
         transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, newy, transform.rotation.eulerAngles.z);
     }
+
+
 }
