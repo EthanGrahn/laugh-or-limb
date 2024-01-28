@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class FungeonGenerator : MonoBehaviour
@@ -10,8 +11,8 @@ public class FungeonGenerator : MonoBehaviour
     public List<GameObject> components = new List<GameObject>();
     public int heightToGenerate = 20;
     [SerializeField] private GameObject assetIndicatorPrefab;
-    [SerializeField] private List<FungeonObstacle> playerChoiceObstacles = new List<FungeonObstacle>();
-    [SerializeField] private List<GameObject> otherObstacles = new List<GameObject>();
+    private FungeonObstacle[] playerChoiceObstacles;
+    private FungeonObstacle[] otherObstacles;
 
     void Start()
     {
@@ -23,7 +24,11 @@ public class FungeonGenerator : MonoBehaviour
         else
         {
             Destroy(this);
+            return;
         }
+
+        playerChoiceObstacles = Resources.LoadAll<FungeonObstacle>("PlayerObstacles");
+        otherObstacles = Resources.LoadAll<FungeonObstacle>("NonPlayerObstacles");
     }
 
     // Update is called once per frame
@@ -48,8 +53,26 @@ public class FungeonGenerator : MonoBehaviour
             {
                 currentComponent.ConnectTo(lastComponent);
             }
-            currentComponent.ConfigureAssetLocations(assetIndicatorPrefab);
+            for (int j = 3; j >= 0; j--)
+            {
+                GameObject obstacle = GetRandomObstacleForPosition(j);
+                if (obstacle != null)
+                    currentComponent.SetObstacleAtLocation(j, obstacle);
+            }
             lastComponent = currentComponent;
         }
+    }
+
+    private GameObject GetRandomObstacleForPosition(int position, bool isPlayerObstacle = false)
+    {
+        FungeonObstacle[] validObstacles;
+        if (isPlayerObstacle)
+            validObstacles = playerChoiceObstacles.Where(x => x.GetPositionArray()[position] == true).ToArray();
+        else
+            validObstacles = otherObstacles.Where(x => x.GetPositionArray()[position] == true).ToArray();
+
+        if (validObstacles.Length == 0)
+            return null;
+        return validObstacles[UnityEngine.Random.Range(0, validObstacles.Length)].prefab;
     }
 }
