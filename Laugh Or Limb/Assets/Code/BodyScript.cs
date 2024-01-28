@@ -9,6 +9,7 @@ public class BodyScript : MonoBehaviour
     public Rigidbody2D body, head;
     public float power = 100f;
     public float gravity = 40f;
+    float mouseDownTimer;
 
     private bool launched = false;
 
@@ -28,8 +29,13 @@ public class BodyScript : MonoBehaviour
             head.bodyType = RigidbodyType2D.Dynamic;
         }
 
+        if (Input.GetMouseButtonDown(0))
+        {
+            mouseDownTimer = Time.time;
+        }
+
         //Launch In direction
-        if (Input.GetMouseButtonDown(0) && !launched)
+        if (Input.GetMouseButtonUp(0) && !launched)
         {
             launched = true;
             body.bodyType = RigidbodyType2D.Dynamic;
@@ -38,7 +44,8 @@ public class BodyScript : MonoBehaviour
             Vector3 mousePos = Input.mousePosition;
             Vector2 direction = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, Camera.main.nearClipPlane)) - body.transform.position;
             direction.Normalize();
-            body.AddForce(direction * power, ForceMode2D.Impulse);
+            body.AddForce(direction * Mathf.Min((Time.time - mouseDownTimer) * 100, power), ForceMode2D.Impulse);
+            Debug.Log((Time.time - mouseDownTimer) * 1000);
         }
     }
 }
