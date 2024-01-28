@@ -22,10 +22,8 @@ public class Freeze : MonoBehaviour
 
     private IEnumerator freezer()
     {
-        Debug.Log("Freezing");
         player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
         yield return new WaitForSeconds(1f);
         player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
-        Debug.Log("UnFreezing" + player);
     }
 }
