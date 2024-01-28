@@ -1,11 +1,20 @@
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class CatapultArrow : MonoBehaviour
 {
-    public GameObject arrow, cannon, finalCannonPos;
+    public GameObject arrow, cannon, finalCannonPos, nArrow;
+    public Image neoArrow;
     bool fired = false;
+    float mouseDownTimer;
+
     void Update()
     {
+        if (Input.GetMouseButtonDown(0))
+        {
+            mouseDownTimer = Time.deltaTime;
+        }
+
         if (Input.GetMouseButtonUp(0))
         {
             arrow.SetActive(false);

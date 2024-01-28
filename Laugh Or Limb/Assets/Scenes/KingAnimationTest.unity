@@ -1235,6 +1235,10 @@ PrefabInstance:
       value: -0.6123097
       objectReference: {fileID: 0}
     - target: {fileID: 4695668919386794753, guid: 85f36159ee0b5e543b789a8d3073aa68, type: 3}
+      propertyPath: nArrow
+      value: 
+      objectReference: {fileID: 1730560507}
+    - target: {fileID: 4695668919386794753, guid: 85f36159ee0b5e543b789a8d3073aa68, type: 3}
       propertyPath: finalCannonPos
       value: 
       objectReference: {fileID: 1269677474}
@@ -2455,6 +2459,11 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
+--- !u!1 &1730560507 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8857918306198619071, guid: 85f36159ee0b5e543b789a8d3073aa68, type: 3}
+  m_PrefabInstance: {fileID: 770123293}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1812248201
 GameObject:
   m_ObjectHideFlags: 0
