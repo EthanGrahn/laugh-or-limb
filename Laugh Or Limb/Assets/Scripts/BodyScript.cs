@@ -4,6 +4,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.Animations;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class BodyScript : MonoBehaviour
 {
@@ -46,13 +47,22 @@ public class BodyScript : MonoBehaviour
         normalFace.SetActive(true);
         hurtFace.SetActive(false);
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.tag == "Bounce")
         {
             body.AddForce(transform.up * power / 2, ForceMode2D.Impulse);
         }
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
+        if (collision.gameObject.tag == "Finish")
+        {
+            SceneManager.LoadScene("EndScreen");
+        }
+        
         StartCoroutine(nameof(swapFace));
         /*
         if (collision.gameObject.tag != "Player")
