@@ -858,7 +858,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 923641840}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.5628159, y: 0.21090202, z: -0.16890547, w: 0.78117186}
+  m_LocalRotation: {x: 0.5628159, y: 0.21090198, z: -0.16890544, w: 0.7811719}
   m_LocalPosition: {x: -0.58556116, y: 4.649539, z: 12.745868}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1765,7 +1765,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 654564693194490546, guid: a6c633c68462a1c4ea26af04c4d83bfc, type: 3}
       propertyPath: dialogues.Array.data[3].text
-      value: My jester has the ability to shift left [A] and right [D] as they fall
+      value: My jestor has the ability to shift left [A] and right [D] as they fall
       objectReference: {fileID: 0}
     - target: {fileID: 654564693194490546, guid: a6c633c68462a1c4ea26af04c4d83bfc, type: 3}
       propertyPath: dialogues.Array.data[4].name
