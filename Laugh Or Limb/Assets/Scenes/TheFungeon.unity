@@ -1608,6 +1608,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PieTrapRight
       objectReference: {fileID: 0}
+    - target: {fileID: 4791273092274193679, guid: 6fcf9c8790e9eeb46a9b6154d4e00d43, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8431389898277361796, guid: 6fcf9c8790e9eeb46a9b6154d4e00d43, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.1652
@@ -1840,6 +1844,10 @@ PrefabInstance:
     - target: {fileID: 5176658088692175007, guid: 210e72e2466a13641b0e648535f1230c, type: 3}
       propertyPath: m_Name
       value: PieTrapLeft
+      objectReference: {fileID: 0}
+    - target: {fileID: 5176658088692175007, guid: 210e72e2466a13641b0e648535f1230c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
