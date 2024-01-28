@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: RampR
   m_EditorClassIdentifier: 
   prefab: {fileID: 7117215257563268882, guid: 998a356b546e36847bfe3210d3fe8254, type: 3}
-  positionOne: 1
+  positionOne: 0
   positionTwo: 1
   positionThree: 1
   positionFour: 1
