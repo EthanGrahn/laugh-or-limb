@@ -38,6 +38,7 @@ public class PomniFall : MonoBehaviour
         yield return new WaitForSeconds(2);
         LookSwap.fade();
         yield return new WaitUntil(()=> fadeImage.GetComponent<FadeToBlack>().fade == false);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        var index = SceneManager.GetSceneByName("TheFungeon").buildIndex;
+        if(index >= 0) SceneManager.LoadScene(index);
     }
 }
