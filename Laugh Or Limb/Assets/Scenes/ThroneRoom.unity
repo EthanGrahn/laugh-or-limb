@@ -858,7 +858,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 923641840}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.56598324, y: 0.20422438, z: -0.1598304, w: 0.782566}
+  m_LocalRotation: {x: 0.56598324, y: 0.2042243, z: -0.15983026, w: 0.78256613}
   m_LocalPosition: {x: -0.58556116, y: 4.649539, z: 12.745868}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1748,7 +1748,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 654564693194490546, guid: a6c633c68462a1c4ea26af04c4d83bfc, type: 3}
       propertyPath: dialogues.Array.data[1].text
-      value: "Prepare your funnybones for our monthly jest fest!\u200C"
+      value: Prepare your funnybones for our monthly jest fest!
       objectReference: {fileID: 0}
     - target: {fileID: 654564693194490546, guid: a6c633c68462a1c4ea26af04c4d83bfc, type: 3}
       propertyPath: dialogues.Array.data[2].name
@@ -1756,8 +1756,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 654564693194490546, guid: a6c633c68462a1c4ea26af04c4d83bfc, type: 3}
       propertyPath: dialogues.Array.data[2].text
-      value: Hammers, spikes, and tasty pies. You never know what waits in the depths
-        of the Fungeon!
+      value: 'Hammers, spikes, and tasty pies. You never know what waits in the depths
+        of the Fungeon! '
       objectReference: {fileID: 0}
     - target: {fileID: 654564693194490546, guid: a6c633c68462a1c4ea26af04c4d83bfc, type: 3}
       propertyPath: dialogues.Array.data[3].name
@@ -1781,7 +1781,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 654564693194490546, guid: a6c633c68462a1c4ea26af04c4d83bfc, type: 3}
       propertyPath: dialogues.Array.data[5].text
-      value: A multitude of impacts and speed are key.
+      value: A multitude of impacts and speed are key to good humor.
       objectReference: {fileID: 0}
     - target: {fileID: 654564693194490546, guid: a6c633c68462a1c4ea26af04c4d83bfc, type: 3}
       propertyPath: dialogues.Array.data[6].name
@@ -2815,7 +2815,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1840369109}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.5516932, y: 0.20709029, z: -0.15609908, w: 0.7927051}
+  m_LocalRotation: {x: 0.5516932, y: 0.20709032, z: -0.15609911, w: 0.7927051}
   m_LocalPosition: {x: -0.58556116, y: 4.649539, z: 12.745868}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
