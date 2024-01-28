@@ -8,7 +8,6 @@ using UnityEngine.Events;
 public class BodyScript : MonoBehaviour
 {
     public Rigidbody2D body, head;
-    public BoxCollider2D R_leg, L_leg;
     public float power = 100f;
     public float gravity = 40f;
     float mouseDownTimer;
@@ -31,7 +30,7 @@ public class BodyScript : MonoBehaviour
         {
             Transform pad = trap.gameObject.transform;
 
-            body.AddForce(pad.up * -trap.relativeVelocity * 4f, ForceMode2D.Impulse);
+            body.AddForce(pad.up * power / 10f, ForceMode2D.Impulse);
         }
     }
 
