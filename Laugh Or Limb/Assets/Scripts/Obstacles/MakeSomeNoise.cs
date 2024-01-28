@@ -17,8 +17,9 @@ public class MakeSomeNoise : MonoBehaviour
         {
            // Debug.Log("Hit Player");
             aSource.PlayOneShot(aSound);
-
-            confettiSpawned = Instantiate(cannon, new Vector2(collision.transform.position.x, collision.transform.position.y), Quaternion.identity);
+            if(!bSpawn)
+                confettiSpawned = Instantiate(cannon, new Vector3(collision.transform.position.x, collision.transform.position.y, 0), Quaternion.identity);
+            StartCoroutine(nameof(destroyCannon));
         }
     }
     
@@ -29,7 +30,7 @@ public class MakeSomeNoise : MonoBehaviour
             confettiSpawned.GetComponent<ParticleSystem>().Play();
             bSpawn = true;
         }
-        yield return new WaitForSeconds(6f);
+        yield return new WaitForSeconds(3f);
         Destroy(confettiSpawned);
         bSpawn = false;
     }
