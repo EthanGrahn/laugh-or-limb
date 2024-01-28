@@ -370,7 +370,7 @@ PrefabInstance:
     - target: {fileID: 2345150127498687771, guid: 24a28c8c7492fa74092b9a35cb3f8c86, type: 3}
       propertyPath: 'components.Array.data[0]'
       value: 
-      objectReference: {fileID: 9045462851488515815, guid: dbd443bcbb0449a49b3cb626624b4eb7, type: 3}
+      objectReference: {fileID: 2710685893628855741, guid: add7904da0ab00f41ab46afa29599bb8, type: 3}
     - target: {fileID: 2345150127498687771, guid: 24a28c8c7492fa74092b9a35cb3f8c86, type: 3}
       propertyPath: playerChoiceObstacles.Array.size
       value: 0

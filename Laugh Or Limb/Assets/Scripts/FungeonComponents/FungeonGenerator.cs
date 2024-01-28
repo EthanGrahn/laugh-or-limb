@@ -52,7 +52,7 @@ public class FungeonGenerator : MonoBehaviour
         FungeonComponent currentComponent;
         for (int i = heightToGenerate; i > 0; i--)
         {
-            go = Instantiate(components[0], transform);
+            go = Instantiate(components[0]);
             currentComponent = go.GetComponent<FungeonComponent>();
             if (lastComponent != null)
             {
@@ -79,7 +79,7 @@ public class FungeonGenerator : MonoBehaviour
             }
             lastComponent = currentComponent;
         }
-        go = Instantiate(bottomComponent, transform);
+        go = Instantiate(bottomComponent);
         go.GetComponent<FungeonComponent>().ConnectTo(lastComponent);
     }
 
