@@ -178,15 +178,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3653727274019518200, guid: b802c2f77f181744983413a43291e9cb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2097411600}
-    - targetCorrespondingSourceObject: {fileID: 3653727274019518200, guid: b802c2f77f181744983413a43291e9cb, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2097411599}
     - targetCorrespondingSourceObject: {fileID: 8249954345931185865, guid: b802c2f77f181744983413a43291e9cb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2117734317}
-    - targetCorrespondingSourceObject: {fileID: 8249954345931185865, guid: b802c2f77f181744983413a43291e9cb, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2117734316}
   m_SourcePrefab: {fileID: 100100000, guid: b802c2f77f181744983413a43291e9cb, type: 3}
 --- !u!1 &331664070
 GameObject:
@@ -1838,20 +1832,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3653727274019518200, guid: b802c2f77f181744983413a43291e9cb, type: 3}
   m_PrefabInstance: {fileID: 179418319}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2097411599
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2097411597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58245f86ba8f6da4ab8c9ea852cd25f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  aSource: {fileID: 2097411600}
-  aSound: {fileID: 8300000, guid: af8626861bbccaf4b98d6584a0c530b6, type: 3}
 --- !u!82 &2097411600
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1954,20 +1934,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8249954345931185865, guid: b802c2f77f181744983413a43291e9cb, type: 3}
   m_PrefabInstance: {fileID: 179418319}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2117734316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2117734314}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58245f86ba8f6da4ab8c9ea852cd25f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  aSource: {fileID: 2117734317}
-  aSound: {fileID: 8300000, guid: af8626861bbccaf4b98d6584a0c530b6, type: 3}
 --- !u!82 &2117734317
 AudioSource:
   m_ObjectHideFlags: 0
