@@ -38,18 +38,13 @@ public class BodyScript : MonoBehaviour
         }
     }
 
-    public void swapFace()
+    private IEnumerator swapFace()
     {
-        if (normalFace.activeSelf)
-        {
-            normalFace.SetActive(false);
-            hurtFace.SetActive(true);
-        }
-        else
-        {
-            normalFace.SetActive(true);
-            hurtFace.SetActive(false);
-        }
+        normalFace.SetActive(false);
+        hurtFace.SetActive(true);
+        yield return new WaitForSeconds(0.5f); 
+        normalFace.SetActive(true);
+        hurtFace.SetActive(false);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -58,11 +53,13 @@ public class BodyScript : MonoBehaviour
         {
             body.AddForce(transform.up * power / 2, ForceMode2D.Impulse);
         }
-
+        StartCoroutine(nameof(swapFace));
+        /*
         if (collision.gameObject.tag != "Player")
         {
-            swapFace();
+            StartCoroutine(nameof(swapFace));
         }
+        */
     }
 
     // Update is called once per frame

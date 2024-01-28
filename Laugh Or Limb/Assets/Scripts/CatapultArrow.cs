@@ -10,16 +10,11 @@ public class CatapultArrow : MonoBehaviour
 
     private void Start()
     {
-        neoArrow = nArrow.GetComponent<Image>();
+        //neoArrow = nArrow.GetComponent<Image>();
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            mouseDownTimer = Time.deltaTime;
-        }
-
         if (Input.GetMouseButtonUp(0))
         {
             arrow.SetActive(false);
