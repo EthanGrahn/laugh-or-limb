@@ -62,6 +62,7 @@ public class BodyScript : MonoBehaviour
             Vector3 dir = Input.mousePosition - pos;
             float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
             this.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
             if (Input.GetMouseButtonUp(0))
             {
                 launched = true;
