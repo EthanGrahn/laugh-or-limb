@@ -31,7 +31,7 @@ public class BodyScript : MonoBehaviour
         {
             Transform pad = trap.gameObject.transform;
 
-            body.AddForce(pad.up * -trap.relativeVelocity * 4f, ForceMode2D.Impulse);
+            body.AddForce(pad.up * power / 10f, ForceMode2D.Impulse);
         }
     }
 
