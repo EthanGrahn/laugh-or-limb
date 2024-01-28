@@ -13,6 +13,7 @@ public class BodyScript : MonoBehaviour
     float mouseDownTimer;
 
     private bool launched = false;
+    private bool atBottom = false;
 
     // Start is called before the first frame update
     void Start()
@@ -67,7 +68,21 @@ public class BodyScript : MonoBehaviour
             Vector2 direction = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, Camera.main.nearClipPlane)) - body.transform.position;
             direction.Normalize();
             body.AddForce(direction * Mathf.Min((Time.time - mouseDownTimer) * 1000, power), ForceMode2D.Impulse);
-            Debug.Log((Time.time - mouseDownTimer) * 1000);
+        }
+
+        // Skip the rest if we're at the bottom of the fungeon
+        if (atBottom)
+            return;
+
+        bool canAccel = Mathf.Abs(body.velocityX) < 20;
+        if (canAccel && Input.GetKey(KeyCode.A))
+        {
+            body.AddForceX(-5, ForceMode2D.Impulse);
+        }
+
+        if (canAccel && Input.GetKey(KeyCode.D))
+        {
+            body.AddForceX(5, ForceMode2D.Impulse);
         }
     }
 }

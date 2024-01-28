@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3346241304168276202}
   m_Layer: 0
   m_Name: HammerClock
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -131,6 +131,10 @@ PrefabInstance:
     - target: {fileID: 6918463314671046767, guid: de9a1abe57f9c7947b12ff438ba1b865, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7284578945982974061, guid: de9a1abe57f9c7947b12ff438ba1b865, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7730570692881173205, guid: de9a1abe57f9c7947b12ff438ba1b865, type: 3}
       propertyPath: m_LocalScale.x

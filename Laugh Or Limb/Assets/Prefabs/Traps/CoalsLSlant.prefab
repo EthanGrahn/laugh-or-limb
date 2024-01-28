@@ -60,9 +60,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -298717334289059223, guid: 5bdea13aa08f0c547a0b10e03eb4bec7, type: 3}
+      propertyPath: m_TagString
+      value: Trap
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 5bdea13aa08f0c547a0b10e03eb4bec7, type: 3}
       propertyPath: m_Name
-      value: Coals
+      value: CoalsLSlant
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 5bdea13aa08f0c547a0b10e03eb4bec7, type: 3}
+      propertyPath: m_TagString
+      value: Trap
       objectReference: {fileID: 0}
     - target: {fileID: 4884089336853408759, guid: 5bdea13aa08f0c547a0b10e03eb4bec7, type: 3}
       propertyPath: m_LocalRotation.w

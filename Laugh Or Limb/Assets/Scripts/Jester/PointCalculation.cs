@@ -19,8 +19,6 @@ public class PointCalculation : MonoBehaviour
     private int iPoints;
     private Rigidbody2D rBody;
 
-    public GameObject displayer;
-
     public UnityEvent<float> OnBoardUpdate = new UnityEvent<float>();
     public UnityEvent<float> OnDecay = new UnityEvent<float>();
 
@@ -34,23 +32,20 @@ public class PointCalculation : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
        // Debug.Log("Collided");
-        if(other.gameObject.tag == "Wall" || other.gameObject.tag == "Trap")
+        if(other.gameObject.tag == "Wall" || other.gameObject.tag == "Trap" || other.gameObject.tag == "Bounce")
         {
             fTemp = rBody.velocity.magnitude * limbScore;
             if (other.gameObject.tag == "Trap")
             {
                 fTemp *= 2;
-                Debug.Log("hit trap!");
             }
-            else Debug.Log("hit wall :)");
-            iPoints = (int)fTemp;
+
+            iPoints = Mathf.CeilToInt(fTemp);
 
             //Add and Decay points
             pointStack.Add(iPoints);
+            StreamUI.Instance.AddPoints(iPoints);
             StartCoroutine(nameof(pointDecay));
-
-            //send iPoints to a display script
-            displayer.GetComponent<PointsDisplay>().updateDisplay(iPoints);
 
             //send iPoints to the chatmeter
 
@@ -59,10 +54,6 @@ public class PointCalculation : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        
-    }
     private IEnumerator pointDecay()
     {
         yield return new WaitForSeconds(0.5f);

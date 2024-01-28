@@ -3,20 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Events;
 
 public class StreamUI : MonoBehaviour
 {
+    public static StreamUI Instance;
+
     public VerticalLayoutGroup chatGroup;
     public GameObject messagePrefab;
     public StreamChatter.Sentiment currentSentiment = StreamChatter.Sentiment.NEUTRAL;
+    public TextMeshProUGUI scoreIndicator;
 
     private StreamChatter[] chatters;
     private List<StreamChatter> positiveChatters = new List<StreamChatter>();
     private List<StreamChatter> neutralChatters = new List<StreamChatter>();
     private List<StreamChatter> negativeChatters = new List<StreamChatter>();
 
+    private int currentScore = 0;
+    public UnityEvent<int> OnSentimentChange = new UnityEvent<int>();
+
     void Start()
     {
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(this);
+
         chatters = Resources.LoadAll<StreamChatter>("StreamChatters");
         foreach (var chatter in chatters)
         {
@@ -49,13 +61,22 @@ public class StreamUI : MonoBehaviour
         switch (sentiment)
         {
             case StreamChatter.Sentiment.POSITIVE:
+                OnSentimentChange.Invoke(4);
                 return positiveChatters[Random.Range(0, positiveChatters.Count)];
             case StreamChatter.Sentiment.NEUTRAL:
+                OnSentimentChange.Invoke(0);
                 return neutralChatters[Random.Range(0, neutralChatters.Count)];
             case StreamChatter.Sentiment.NEGATIVE:
+                OnSentimentChange.Invoke(1);
                 return negativeChatters[Random.Range(0, negativeChatters.Count)];
             default:
                 return null;
         }
+    }
+
+    public void AddPoints(int amount)
+    {
+        currentScore += amount;
+        scoreIndicator.text = string.Format("viewers: {0}", currentScore);
     }
 }
