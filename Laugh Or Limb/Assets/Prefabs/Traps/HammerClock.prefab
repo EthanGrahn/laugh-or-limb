@@ -227,6 +227,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aSource: {fileID: 5484412208062281825}
   aSound: {fileID: 8300000, guid: 485fb5233731c5743b246e6d8b02dee7, type: 3}
+  confettiSpawned: {fileID: 0}
+  cannon: {fileID: 4018454430350489443, guid: 61e831527323e554c961c41d91031b67, type: 3}
 --- !u!82 &5484412208062281825
 AudioSource:
   m_ObjectHideFlags: 0
