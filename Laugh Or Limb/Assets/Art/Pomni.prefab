@@ -614,6 +614,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17f9325d2107c1d4d909c8887bf171ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  arrow: {fileID: 0}
+  cannon: {fileID: 0}
+  finalCannonPos: {fileID: 0}
 --- !u!1 &2307285358345355572
 GameObject:
   m_ObjectHideFlags: 0
@@ -2303,8 +2306,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 4500230613994893339}
   head: {fileID: 2928728065638113234}
-  R_leg: {fileID: 0}
-  L_leg: {fileID: 0}
   power: 1000
   gravity: 40
 --- !u!1 &6414260174051261454
