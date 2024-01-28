@@ -56,18 +56,20 @@ public class BodyScript : MonoBehaviour
             mouseDownTimer = Time.time;
         }
 
-        //Launch In direction
-        if (Input.GetMouseButtonUp(0) && !launched)
+        if (!launched)
         {
-            launched = true;
-            body.bodyType = RigidbodyType2D.Dynamic;
-            head.bodyType = RigidbodyType2D.Dynamic;
+            Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);
+            Vector3 dir = Input.mousePosition - pos;
+            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            this.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            if (Input.GetMouseButtonUp(0))
+            {
+                launched = true;
+                body.bodyType = RigidbodyType2D.Dynamic;
+                head.bodyType = RigidbodyType2D.Dynamic;
 
-            Vector3 mousePos = Input.mousePosition;
-            Vector2 direction = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, Camera.main.nearClipPlane)) - body.transform.position;
-            direction.Normalize();
-            body.AddForce(direction * Mathf.Min((Time.time - mouseDownTimer) * 1000, power), ForceMode2D.Impulse);
-            Debug.Log((Time.time - mouseDownTimer) * 1000);
+                body.AddForce(this.transform.right * Mathf.Min((Time.time - mouseDownTimer) * 1000, power), ForceMode2D.Impulse);
+            }
         }
     }
 }
