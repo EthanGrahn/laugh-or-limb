@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2092745291170573167}
   m_Layer: 0
   m_Name: BladesClock
-  m_TagString: Trap
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,14 +120,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spinning Blades
       objectReference: {fileID: 0}
-    - target: {fileID: 1226684317343308694, guid: 0dc2332f442ea7449bb533116dd331bb, type: 3}
-      propertyPath: m_TagString
-      value: Trap
-      objectReference: {fileID: 0}
-    - target: {fileID: 1449414354995413908, guid: 0dc2332f442ea7449bb533116dd331bb, type: 3}
-      propertyPath: m_TagString
-      value: Trap
-      objectReference: {fileID: 0}
     - target: {fileID: 1895415452037415212, guid: 0dc2332f442ea7449bb533116dd331bb, type: 3}
       propertyPath: m_LocalScale.x
       value: 52.910053
@@ -179,10 +171,6 @@ PrefabInstance:
     - target: {fileID: 1895415452037415212, guid: 0dc2332f442ea7449bb533116dd331bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6112588598264425381, guid: 0dc2332f442ea7449bb533116dd331bb, type: 3}
-      propertyPath: m_TagString
-      value: Trap
       objectReference: {fileID: 0}
     - target: {fileID: 6431252361695687387, guid: 0dc2332f442ea7449bb533116dd331bb, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'

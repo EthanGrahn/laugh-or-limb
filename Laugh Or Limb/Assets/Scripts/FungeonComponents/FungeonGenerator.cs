@@ -64,6 +64,7 @@ public class FungeonGenerator : MonoBehaviour
             List<bool> isPlayerObstacle = new List<bool>();
             for (int j = playerObstacleCount; j > 0; j--)
             {
+<<<<<<< Updated upstream
                 isPlayerObstacle.Add(true);
             }
             for (int j = otherObstacleCount; j > 0; j--)
@@ -74,6 +75,9 @@ public class FungeonGenerator : MonoBehaviour
             for (int j = currentComponent.GetAssetLocationCount() - 1; j >= 0; j--)
             {
                 GameObject obstacle = GetRandomObstacleForPosition(j, isPlayerObstacle[j]);
+=======
+                GameObject obstacle = GetRandomObstacleForPosition(j);
+>>>>>>> Stashed changes
                 if (obstacle != null)
                     currentComponent.SetObstacleAtLocation(j, obstacle);
             }

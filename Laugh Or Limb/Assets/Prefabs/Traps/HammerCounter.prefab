@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3346241304168276202}
   m_Layer: 0
   m_Name: HammerCounter
-  m_TagString: Trap
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,7 +126,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6392405546960830813, guid: de9a1abe57f9c7947b12ff438ba1b865, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6918463314671046767, guid: de9a1abe57f9c7947b12ff438ba1b865, type: 3}
       propertyPath: m_Name
@@ -195,7 +195,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 7668152549439111740, guid: de9a1abe57f9c7947b12ff438ba1b865, type: 3}
-    - {fileID: 5508646339834730839, guid: de9a1abe57f9c7947b12ff438ba1b865, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6918463314671046767, guid: de9a1abe57f9c7947b12ff438ba1b865, type: 3}
