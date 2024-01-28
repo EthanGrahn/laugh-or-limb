@@ -45,7 +45,7 @@ public class PointCalculation : MonoBehaviour
             else Debug.Log("hit wall :)");
             iPoints = (int)fTemp;
 
-            //Add/Decay points
+            //Add and Decay points
             pointStack.Add(iPoints);
             StartCoroutine(nameof(pointDecay));
 
