@@ -23,4 +23,9 @@ public class FungeonComponent : MonoBehaviour
         GameObject go = Instantiate(prefab);
         go.transform.position = assetLocations[location].position + Vector3.back * 2;
     }
+
+    public int GetAssetLocationCount()
+    {
+        return assetLocations.Count;
+    }
 }

@@ -8,6 +8,9 @@ using UnityEngine.Events;
 public class BodyScript : MonoBehaviour
 {
     public Rigidbody2D body, head;
+
+    public GameObject normalFace, hurtFace;
+
     public float power = 100f;
     public float gravity = 40f;
     float mouseDownTimer;
@@ -18,6 +21,7 @@ public class BodyScript : MonoBehaviour
     void Start()
     {
         Physics2D.gravity = new Vector2(0, -gravity);
+        normalFace.SetActive(true);
     }
 
     public void trapIncounter(Collision2D trap)
@@ -34,12 +38,28 @@ public class BodyScript : MonoBehaviour
         }
     }
 
+    private IEnumerator swapFace()
+    {
+        normalFace.SetActive(false);
+        hurtFace.SetActive(true);
+        yield return new WaitForSeconds(0.5f); 
+        normalFace.SetActive(true);
+        hurtFace.SetActive(false);
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Bounce")
         {
             body.AddForce(transform.up * power / 2, ForceMode2D.Impulse);
         }
+        StartCoroutine(nameof(swapFace));
+        /*
+        if (collision.gameObject.tag != "Player")
+        {
+            StartCoroutine(nameof(swapFace));
+        }
+        */
     }
 
     // Update is called once per frame
@@ -56,18 +76,21 @@ public class BodyScript : MonoBehaviour
             mouseDownTimer = Time.time;
         }
 
-        //Launch In direction
-        if (Input.GetMouseButtonUp(0) && !launched)
+        if (!launched)
         {
-            launched = true;
-            body.bodyType = RigidbodyType2D.Dynamic;
-            head.bodyType = RigidbodyType2D.Dynamic;
+            Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);
+            Vector3 dir = Input.mousePosition - pos;
+            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            this.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
-            Vector3 mousePos = Input.mousePosition;
-            Vector2 direction = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, Camera.main.nearClipPlane)) - body.transform.position;
-            direction.Normalize();
-            body.AddForce(direction * Mathf.Min((Time.time - mouseDownTimer) * 1000, power), ForceMode2D.Impulse);
-            Debug.Log((Time.time - mouseDownTimer) * 1000);
+            if (Input.GetMouseButtonUp(0))
+            {
+                launched = true;
+                body.bodyType = RigidbodyType2D.Dynamic;
+                head.bodyType = RigidbodyType2D.Dynamic;
+
+                body.AddForce(this.transform.right * Mathf.Min((Time.time - mouseDownTimer) * 1000, power), ForceMode2D.Impulse);
+            }
         }
     }
 }

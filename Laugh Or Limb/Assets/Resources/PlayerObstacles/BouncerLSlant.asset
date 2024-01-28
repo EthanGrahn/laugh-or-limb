@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BouncerLSlant
   m_EditorClassIdentifier: 
   prefab: {fileID: 2640306739116813215, guid: df10875acab72774789cf4b76d976ab7, type: 3}
-  positionOne: 1
-  positionTwo: 1
+  positionOne: 0
+  positionTwo: 0
   positionThree: 1
   positionFour: 1

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FungeonGenerator : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class FungeonGenerator : MonoBehaviour
 
     public List<GameObject> components = new List<GameObject>();
     public int heightToGenerate = 20;
+    [SerializeField] private GameObject bottomComponent;
     [SerializeField] private GameObject assetIndicatorPrefab;
     private FungeonObstacle[] playerChoiceObstacles;
     private FungeonObstacle[] otherObstacles;
@@ -31,10 +33,13 @@ public class FungeonGenerator : MonoBehaviour
         otherObstacles = Resources.LoadAll<FungeonObstacle>("NonPlayerObstacles");
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnLevelWasLoaded(int level)
     {
-        if (Input.GetKeyDown(KeyCode.H))
+        if (Instance != this)
+            return;
+
+        string sceneName = SceneManager.GetSceneByBuildIndex(level).name;
+        if (sceneName == "TheFungeon")
         {
             StartGeneration();
         }
@@ -53,14 +58,29 @@ public class FungeonGenerator : MonoBehaviour
             {
                 currentComponent.ConnectTo(lastComponent);
             }
-            for (int j = 3; j >= 0; j--)
+            int assetLocationCount = currentComponent.GetAssetLocationCount();
+            int playerObstacleCount = Mathf.Max(assetLocationCount / 2, 1);
+            int otherObstacleCount = assetLocationCount - playerObstacleCount;
+            List<bool> isPlayerObstacle = new List<bool>();
+            for (int j = playerObstacleCount; j > 0; j--)
             {
-                GameObject obstacle = GetRandomObstacleForPosition(j, true);
+                isPlayerObstacle.Add(true);
+            }
+            for (int j = otherObstacleCount; j > 0; j--)
+            {
+                isPlayerObstacle.Add(false);
+            }
+            isPlayerObstacle = isPlayerObstacle.OrderBy(x => UnityEngine.Random.Range(0, 1)).ToList();
+            for (int j = currentComponent.GetAssetLocationCount() - 1; j >= 0; j--)
+            {
+                GameObject obstacle = GetRandomObstacleForPosition(j, isPlayerObstacle[j]);
                 if (obstacle != null)
                     currentComponent.SetObstacleAtLocation(j, obstacle);
             }
             lastComponent = currentComponent;
         }
+        go = Instantiate(bottomComponent, transform);
+        go.GetComponent<FungeonComponent>().ConnectTo(lastComponent);
     }
 
     private GameObject GetRandomObstacleForPosition(int position, bool isPlayerObstacle = false)
