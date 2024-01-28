@@ -1441,7 +1441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneName: SampleScene
-  credits: 
+  credits: Credits
 --- !u!1 &1834896978
 GameObject:
   m_ObjectHideFlags: 0
