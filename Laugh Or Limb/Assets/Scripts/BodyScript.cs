@@ -13,7 +13,6 @@ public class BodyScript : MonoBehaviour
     float mouseDownTimer;
 
     private bool launched = false;
-    private bool atBottom = false;
 
     // Start is called before the first frame update
     void Start()
@@ -57,32 +56,21 @@ public class BodyScript : MonoBehaviour
             mouseDownTimer = Time.time;
         }
 
-        //Launch In direction
-        if (Input.GetMouseButtonUp(0) && !launched)
+        if (!launched)
         {
-            launched = true;
-            body.bodyType = RigidbodyType2D.Dynamic;
-            head.bodyType = RigidbodyType2D.Dynamic;
+            Vector3 pos = Camera.main.WorldToScreenPoint(transform.position);
+            Vector3 dir = Input.mousePosition - pos;
+            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            this.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
-            Vector3 mousePos = Input.mousePosition;
-            Vector2 direction = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, Camera.main.nearClipPlane)) - body.transform.position;
-            direction.Normalize();
-            body.AddForce(direction * Mathf.Min((Time.time - mouseDownTimer) * 1000, power), ForceMode2D.Impulse);
-        }
+            if (Input.GetMouseButtonUp(0))
+            {
+                launched = true;
+                body.bodyType = RigidbodyType2D.Dynamic;
+                head.bodyType = RigidbodyType2D.Dynamic;
 
-        // Skip the rest if we're at the bottom of the fungeon
-        if (atBottom)
-            return;
-
-        bool canAccel = Mathf.Abs(body.velocityX) < 20;
-        if (canAccel && Input.GetKey(KeyCode.A))
-        {
-            body.AddForceX(-5, ForceMode2D.Impulse);
-        }
-
-        if (canAccel && Input.GetKey(KeyCode.D))
-        {
-            body.AddForceX(5, ForceMode2D.Impulse);
+                body.AddForce(this.transform.right * Mathf.Min((Time.time - mouseDownTimer) * 1000, power), ForceMode2D.Impulse);
+            }
         }
     }
 }
