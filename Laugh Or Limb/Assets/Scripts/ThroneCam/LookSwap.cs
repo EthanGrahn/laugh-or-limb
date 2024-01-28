@@ -18,6 +18,7 @@ public class LookSwap : MonoBehaviour
 
     public static Action beginDialogue = delegate { };
     public static Action endDialogue = delegate { };
+    public static Action fade = delegate { };
     private void Start()
     {
         cart = GetComponent<CinemachineDollyCart>();

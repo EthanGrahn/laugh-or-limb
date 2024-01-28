@@ -12,21 +12,23 @@ public class FadeToBlack : MonoBehaviour
 
     public bool fade = true;
 
-    void Start()
+    private void OnEnable()
     {
-        StartCoroutine(FadeBlackOutSquare());
+        LookSwap.fade += Fading;
     }
 
-    void Update()
+    private void OnDisable()
     {
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            StartCoroutine(FadeBlackOutSquare());
-        }
+        LookSwap.fade -= Fading;
+    }
+
+    private void Fading()
+    {
+        StartCoroutine(nameof(FadeBlackOutSquare),.5f);
     }
 
 
-    public IEnumerator FadeBlackOutSquare(bool fadeToBlack = true, int fadeSpeed = 1)
+    public IEnumerator FadeBlackOutSquare(/*bool fadeToBlack = true,*/ float fadeSpeed = 1)
     {
         Color objectColor = BlackOutSquare.color;
         float fadeAmount;
@@ -53,7 +55,7 @@ public class FadeToBlack : MonoBehaviour
                 BlackOutSquare.color = objectColor;
                 yield return null;
             }
-
+            fade = false;
           }
 
 
