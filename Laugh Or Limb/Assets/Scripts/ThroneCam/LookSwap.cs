@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using System;
 
 public class LookSwap : MonoBehaviour
 {
@@ -15,16 +16,18 @@ public class LookSwap : MonoBehaviour
     public bool dropTime = false;
     private bool hasSwapped = false;
 
+    public static Action beginDialogue = delegate { };
+    public static Action endDialogue = delegate { };
     private void Start()
     {
         cart = GetComponent<CinemachineDollyCart>();
         initialLook = cam.LookAt;
-        //OpenDoor.Fall += Continue;
+        endDialogue += Drop;
     }
 
     private void OnDisable()
     {
-        //OpenDoor.Fall -= Continue;
+        endDialogue -= Drop;
     }
 
     void Update()
@@ -40,9 +43,8 @@ public class LookSwap : MonoBehaviour
             cart.m_Speed = 0;
             hasPaused = true;
 
-            //replace this with king dialogue
-            StartCoroutine(nameof(waitTime),5);
-
+            beginDialogue();
+            //StartCoroutine(nameof(waitTime), 5); analog for king dialogue
         }
         else if(cart.m_Position >= 2 && dropTime)
         {
@@ -53,6 +55,11 @@ public class LookSwap : MonoBehaviour
         {
             cam.LookAt = initialLook;
         }
+    }
+
+    private void Drop()
+    {
+        dropTime = true;
     }
 
     IEnumerator waitTime(int delay)
