@@ -15,7 +15,10 @@ public class FungeonComponent : MonoBehaviour
 
     public void ConnectTo(FungeonComponent other)
     {
-        transform.position = other.GetConnectionPoint();
+        float connectY = other.GetConnectionPoint().y;
+        Vector3 offset = transform.position;
+        offset.y = connectY - 23f;
+        transform.position = offset;
     }
 
     public void SetObstacleAtLocation(int location, GameObject prefab)

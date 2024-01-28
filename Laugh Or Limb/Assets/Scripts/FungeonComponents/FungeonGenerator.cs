@@ -52,7 +52,7 @@ public class FungeonGenerator : MonoBehaviour
         FungeonComponent currentComponent;
         for (int i = heightToGenerate; i > 0; i--)
         {
-            go = Instantiate(components[0], transform);
+            go = Instantiate(components[0]);
             currentComponent = go.GetComponent<FungeonComponent>();
             if (lastComponent != null)
             {
@@ -70,7 +70,49 @@ public class FungeonGenerator : MonoBehaviour
             {
                 isPlayerObstacle.Add(false);
             }
-            isPlayerObstacle = isPlayerObstacle.OrderBy(x => UnityEngine.Random.Range(0, 1)).ToList();
+            //isPlayerObstacle = isPlayerObstacle.OrderBy(x => UnityEngine.Random.Range(0, 1)).ToList();
+            var k = UnityEngine.Random.Range(0, 6);
+            List<bool> temp = new List<bool>();
+            switch(k)
+            {
+                case 0:
+                    temp.Add(false);
+                    temp.Add(true);
+                    temp.Add(true);
+                    temp.Add(false);
+                    break;
+                case 1:
+                    temp.Add(false);
+                    temp.Add(true);
+                    temp.Add(false);
+                    temp.Add(true);
+                    break;
+                case 2:
+                    temp.Add(true);
+                    temp.Add(false);
+                    temp.Add(false);
+                    temp.Add(true);
+                    break;
+                case 3:
+                    temp.Add(false);
+                    temp.Add(false);
+                    temp.Add(true);
+                    temp.Add(true);
+                    break;
+                case 4:
+                    temp.Add(true);
+                    temp.Add(false);
+                    temp.Add(true);
+                    temp.Add(false);
+                    break;
+                case 5:
+                    temp.Add(true);
+                    temp.Add(true);
+                    temp.Add(false);
+                    temp.Add(false);
+                    break;
+            }
+            isPlayerObstacle = temp;
             for (int j = currentComponent.GetAssetLocationCount() - 1; j >= 0; j--)
             {
                 GameObject obstacle = GetRandomObstacleForPosition(j, isPlayerObstacle[j]);
@@ -79,7 +121,7 @@ public class FungeonGenerator : MonoBehaviour
             }
             lastComponent = currentComponent;
         }
-        go = Instantiate(bottomComponent, transform);
+        go = Instantiate(bottomComponent);
         go.GetComponent<FungeonComponent>().ConnectTo(lastComponent);
     }
 

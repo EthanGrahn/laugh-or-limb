@@ -10,7 +10,7 @@ public class ShootArrows : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Player")
+        if(other.gameObject.TryGetComponent<JestorFaceController>(out JestorFaceController j)) //(other.gameObject.tag == "Player")
         {
             bSpawn = true;
             StartCoroutine(nameof(FireRate));
@@ -19,7 +19,7 @@ public class ShootArrows : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.TryGetComponent<JestorFaceController>(out JestorFaceController j))//(other.gameObject.tag == "Player")
         {
             bSpawn = false;
             StopCoroutine(nameof(FireRate));
@@ -29,8 +29,8 @@ public class ShootArrows : MonoBehaviour
     {
         if(!bFiring)
         {
-            StartCoroutine(nameof(FireRate));
             bFiring = true;
+            StartCoroutine(nameof(FireRate));
         }
     }
 

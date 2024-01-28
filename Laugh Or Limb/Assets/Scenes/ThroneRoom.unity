@@ -858,7 +858,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 923641840}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.5628159, y: 0.21090198, z: -0.16890544, w: 0.7811719}
+  m_LocalRotation: {x: 0.56598324, y: 0.2042243, z: -0.15983026, w: 0.78256613}
   m_LocalPosition: {x: -0.58556116, y: 4.649539, z: 12.745868}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1254,7 +1254,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 972970475}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.01988893, y: 0.6242898, z: -0.01590268, w: 0.7807777}
+  m_LocalRotation: {x: 0.014795315, y: 0.62467325, z: -0.011839061, w: 0.78065634}
   m_LocalPosition: {x: -13.445708, y: 1.39, z: -3.063481}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1452,7 +1452,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1030045476}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0009539835, y: -0.15352854, z: 0.007975434, w: 0.9881116}
+  m_LocalRotation: {x: -0.0073944526, y: -0.1532068, z: 0.0069578104, w: 0.9881421}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1748,7 +1748,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 654564693194490546, guid: a6c633c68462a1c4ea26af04c4d83bfc, type: 3}
       propertyPath: dialogues.Array.data[1].text
-      value: Prepare your funnybones for our monthly jest fest!
+      value: "Prepare your funnybones for our monthly jest fest!\u200C"
       objectReference: {fileID: 0}
     - target: {fileID: 654564693194490546, guid: a6c633c68462a1c4ea26af04c4d83bfc, type: 3}
       propertyPath: dialogues.Array.data[2].name
@@ -1756,8 +1756,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 654564693194490546, guid: a6c633c68462a1c4ea26af04c4d83bfc, type: 3}
       propertyPath: dialogues.Array.data[2].text
-      value: 'Hammers, spikes, and tasty pies. You never know what waits in the depths
-        of the Fungeon! '
+      value: Hammers, spikes, and tasty pies. You never know what waits in the depths
+        of the Fungeon!
       objectReference: {fileID: 0}
     - target: {fileID: 654564693194490546, guid: a6c633c68462a1c4ea26af04c4d83bfc, type: 3}
       propertyPath: dialogues.Array.data[3].name
@@ -1765,7 +1765,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 654564693194490546, guid: a6c633c68462a1c4ea26af04c4d83bfc, type: 3}
       propertyPath: dialogues.Array.data[3].text
-      value: My jestor has the ability to shift left [A] and right [D] as they fall
+      value: My jester has the ability to shift left [A] and right [D] as they fall
       objectReference: {fileID: 0}
     - target: {fileID: 654564693194490546, guid: a6c633c68462a1c4ea26af04c4d83bfc, type: 3}
       propertyPath: dialogues.Array.data[4].name
@@ -1781,7 +1781,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 654564693194490546, guid: a6c633c68462a1c4ea26af04c4d83bfc, type: 3}
       propertyPath: dialogues.Array.data[5].text
-      value: A multitude of impacts and speed are key to good humor.
+      value: A multitude of impacts and speed are key.
       objectReference: {fileID: 0}
     - target: {fileID: 654564693194490546, guid: a6c633c68462a1c4ea26af04c4d83bfc, type: 3}
       propertyPath: dialogues.Array.data[6].name
@@ -2300,7 +2300,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1483848487}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.5769319, y: 0.20779479, z: -0.17271355, w: 0.7708054}
+  m_LocalRotation: {x: 0.5801241, y: 0.20128328, z: -0.16351864, w: 0.77214164}
   m_LocalPosition: {x: -0.58556116, y: 4.649539, z: 12.745868}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2672,32 +2672,36 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 951143615}
     - target: {fileID: 8014279030902390118, guid: 7665bbb9db7b45a49b1eec14da21e848, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8014279030902390118, guid: 7665bbb9db7b45a49b1eec14da21e848, type: 3}
       propertyPath: normalFace
       value: 
       objectReference: {fileID: 631836637}
     - target: {fileID: 8247144759134208234, guid: 7665bbb9db7b45a49b1eec14da21e848, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.21482016
+      value: 0.29001144
       objectReference: {fileID: 0}
     - target: {fileID: 8247144759134208234, guid: 7665bbb9db7b45a49b1eec14da21e848, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.21482016
+      value: 0.29001144
       objectReference: {fileID: 0}
     - target: {fileID: 8247144759134208234, guid: 7665bbb9db7b45a49b1eec14da21e848, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.21482016
+      value: 0.29001144
       objectReference: {fileID: 0}
     - target: {fileID: 8247144759134208234, guid: 7665bbb9db7b45a49b1eec14da21e848, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.14017
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 8247144759134208234, guid: 7665bbb9db7b45a49b1eec14da21e848, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.68
+      value: 0.862
       objectReference: {fileID: 0}
     - target: {fileID: 8247144759134208234, guid: 7665bbb9db7b45a49b1eec14da21e848, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.00075252
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 8247144759134208234, guid: 7665bbb9db7b45a49b1eec14da21e848, type: 3}
       propertyPath: m_LocalRotation.w
@@ -2815,7 +2819,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1840369109}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.5485517, y: 0.21393143, z: -0.16505155, w: 0.79125375}
+  m_LocalRotation: {x: 0.5516932, y: 0.20709033, z: -0.15609917, w: 0.79270506}
   m_LocalPosition: {x: -0.58556116, y: 4.649539, z: 12.745868}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

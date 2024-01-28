@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Animations;
@@ -17,6 +18,7 @@ public class BodyScript : MonoBehaviour
     float mouseDownTimer;
 
     private bool launched = false;
+    private bool atBottom = false;
 
     // Start is called before the first frame update
     void Start()
@@ -47,22 +49,19 @@ public class BodyScript : MonoBehaviour
         normalFace.SetActive(true);
         hurtFace.SetActive(false);
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+
+    private IEnumerator EndTheLevel()
     {
-        Debug.Log(collision.gameObject.tag);
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("EndScreen");
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
         if (collision.gameObject.tag == "Bounce")
         {
             body.AddForce(transform.up * power / 2, ForceMode2D.Impulse);
         }
-    }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        
-        if (collision.gameObject.tag == "Finish")
-        {
-            SceneManager.LoadScene("EndScreen");
-        }
-        
         StartCoroutine(nameof(swapFace));
         /*
         if (collision.gameObject.tag != "Player")
@@ -75,6 +74,14 @@ public class BodyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (launched && atBottom)
+            return;
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            atBottom = true;
+            StartCoroutine(EndTheLevel());
+        }
         if (Input.GetKeyDown(KeyCode.Space))
         {
             body.bodyType = RigidbodyType2D.Dynamic; 
@@ -101,6 +108,20 @@ public class BodyScript : MonoBehaviour
 
                 body.AddForce(this.transform.right * Mathf.Min((Time.time - mouseDownTimer) * 1000, power), ForceMode2D.Impulse);
             }
+        }
+
+        if (atBottom)
+            return;
+
+        bool canAccel = Mathf.Abs(body.velocityX) < 20;
+        if (canAccel && Input.GetKey(KeyCode.A))
+        {
+            body.AddForceX(-5, ForceMode2D.Impulse);
+        }
+
+        if (canAccel && Input.GetKey(KeyCode.D))
+        {
+            body.AddForceX(5, ForceMode2D.Impulse);
         }
     }
 }

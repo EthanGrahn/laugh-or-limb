@@ -18,6 +18,7 @@ public class StreamUI : MonoBehaviour
     private List<StreamChatter> positiveChatters = new List<StreamChatter>();
     private List<StreamChatter> neutralChatters = new List<StreamChatter>();
     private List<StreamChatter> negativeChatters = new List<StreamChatter>();
+    private Queue<int> pointQueue = new Queue<int>();
 
     private int currentScore = 0;
     public UnityEvent<int> OnSentimentChange = new UnityEvent<int>();
@@ -42,6 +43,7 @@ public class StreamUI : MonoBehaviour
 
         }
         StartCoroutine(ChatMessages());
+        StartCoroutine(MonitorPointQueue());
     }
 
     private IEnumerator ChatMessages()
@@ -56,27 +58,64 @@ public class StreamUI : MonoBehaviour
         }
     }
 
+    private IEnumerator MonitorPointQueue()
+    {
+        while (gameObject.activeInHierarchy)
+        {
+            yield return new WaitForSeconds(2);
+            if (pointQueue.Count > 0)
+            {
+                pointQueue.Dequeue();
+            }
+        }
+    }
+
     private StreamChatter GetChatterWithSentiment(StreamChatter.Sentiment sentiment)
     {
         switch (sentiment)
         {
             case StreamChatter.Sentiment.POSITIVE:
-                OnSentimentChange.Invoke(4);
                 return positiveChatters[Random.Range(0, positiveChatters.Count)];
             case StreamChatter.Sentiment.NEUTRAL:
-                OnSentimentChange.Invoke(0);
                 return neutralChatters[Random.Range(0, neutralChatters.Count)];
             case StreamChatter.Sentiment.NEGATIVE:
-                OnSentimentChange.Invoke(1);
                 return negativeChatters[Random.Range(0, negativeChatters.Count)];
             default:
                 return null;
         }
     }
 
+    private StreamChatter.Sentiment CalculateSentiment()
+    {
+        int total = 0;
+        foreach(var point in pointQueue)
+        {
+            total += point;
+        }
+        if (total >= 5000)
+        {
+            currentSentiment = StreamChatter.Sentiment.POSITIVE;
+            OnSentimentChange.Invoke(4);
+        }
+        else if (total >= 2000)
+        {
+            currentSentiment = StreamChatter.Sentiment.NEUTRAL;
+            OnSentimentChange.Invoke(0);
+        }
+        else
+        {
+            currentSentiment = StreamChatter.Sentiment.NEGATIVE;
+            OnSentimentChange.Invoke(1);
+        }
+
+        return currentSentiment;
+    }
+
     public void AddPoints(int amount)
     {
         currentScore += amount;
+        pointQueue.Enqueue(amount);
+        CalculateSentiment();
         scoreIndicator.text = string.Format("viewers: {0}", currentScore);
     }
 }
