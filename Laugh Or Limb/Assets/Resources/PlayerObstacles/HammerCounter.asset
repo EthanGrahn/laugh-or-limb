@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HammerCounter
   m_EditorClassIdentifier: 
   prefab: {fileID: 6232882837956533122, guid: 8af08f76370fd0f4b9bdddb44f3540cc, type: 3}
-  positionOne: 1
+  positionOne: 0
   positionTwo: 1
   positionThree: 1
-  positionFour: 1
+  positionFour: 0
