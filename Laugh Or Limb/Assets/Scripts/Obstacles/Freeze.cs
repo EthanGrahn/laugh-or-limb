@@ -8,16 +8,16 @@ public class Freeze : MonoBehaviour
     private bool bFroze = false;
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (!collision.CompareTag("Player"))
+            return;
 
         if (!bFroze)
         {
             bFroze = true;
             //    collision.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
             //   collision.gameObject.GetComponent<Rigidbody2D>().totalForce = new Vector2(0, 0);
-            if (collision.gameObject.tag == "Player") ;
-                player = collision.gameObject;
-
-            StartCoroutine(nameof(freezer));
+            player = collision.gameObject;
+            StartCoroutine(freezer());
         }
 
     }
