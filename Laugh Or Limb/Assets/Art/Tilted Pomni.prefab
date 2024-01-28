@@ -2196,6 +2196,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 4500230613994893339}
   head: {fileID: 2928728065638113234}
+  normalFace: {fileID: 186224731876164804}
+  hurtFace: {fileID: 6124572421672909204}
   power: 1000
   gravity: 40
 --- !u!1 &6414260174051261454
@@ -2683,6 +2685,11 @@ PrefabInstance:
 --- !u!4 &4974449659628303544 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4664947942687867778, guid: 4cc28131992f23e499a500edc2d1e2f5, type: 3}
+  m_PrefabInstance: {fileID: 411502036546008890}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6124572421672909204 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5857820575528586926, guid: 4cc28131992f23e499a500edc2d1e2f5, type: 3}
   m_PrefabInstance: {fileID: 411502036546008890}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4117567527622612620
