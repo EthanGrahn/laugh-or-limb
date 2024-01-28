@@ -407,8 +407,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   aSource: {fileID: 3584111976788127438}
   aSound: {fileID: 8300000, guid: d3e33d57be50f674eb7f03b116d7153d, type: 3}
-  confettiSpawned: {fileID: 0}
-  cannon: {fileID: 4018454430350489443, guid: 61e831527323e554c961c41d91031b67, type: 3}
 --- !u!1 &7032435588532557900
 GameObject:
   m_ObjectHideFlags: 0

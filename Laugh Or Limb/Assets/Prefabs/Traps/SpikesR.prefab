@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3387166887183987397}
   - component: {fileID: 3248098865969085851}
   - component: {fileID: 2618715846995175409}
+  - component: {fileID: 3973064771499828473}
   - component: {fileID: 1576484548872035623}
   m_Layer: 0
   m_Name: SpikesR
@@ -122,6 +123,20 @@ PolygonCollider2D:
       - {x: 1.3971344, y: -5.4402785}
       - {x: 3.6264029, y: 0.17412663}
   m_UseDelaunayMesh: 0
+--- !u!114 &3973064771499828473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2615028952164558975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58245f86ba8f6da4ab8c9ea852cd25f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aSource: {fileID: 1576484548872035623}
+  aSound: {fileID: 8300000, guid: d3e33d57be50f674eb7f03b116d7153d, type: 3}
 --- !u!82 &1576484548872035623
 AudioSource:
   m_ObjectHideFlags: 0
@@ -233,7 +248,6 @@ GameObject:
   - component: {fileID: 5415891167816907350}
   - component: {fileID: 3904083719330098731}
   - component: {fileID: 8135154168159968391}
-  - component: {fileID: 1524514031084882022}
   m_Layer: 0
   m_Name: FreezeZone
   m_TagString: Untagged
@@ -393,22 +407,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 462f86bafb94889489ab5173c55db2b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1524514031084882022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3549263334532408095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58245f86ba8f6da4ab8c9ea852cd25f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  aSource: {fileID: 1576484548872035623}
-  aSound: {fileID: 8300000, guid: d3e33d57be50f674eb7f03b116d7153d, type: 3}
-  confettiSpawned: {fileID: 0}
-  cannon: {fileID: 4018454430350489443, guid: 61e831527323e554c961c41d91031b67, type: 3}
 --- !u!1 &7032435588532557900
 GameObject:
   m_ObjectHideFlags: 0

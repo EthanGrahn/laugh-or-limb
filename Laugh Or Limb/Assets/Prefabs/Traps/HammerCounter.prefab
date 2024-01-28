@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6343078348726499967}
   - component: {fileID: 3346241304168276202}
   - component: {fileID: 2001474062970163899}
+  - component: {fileID: 8868697221024442035}
   m_Layer: 0
   m_Name: HammerCounter
   m_TagString: Trap
@@ -206,6 +207,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8868697221024442035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6232882837956533122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58245f86ba8f6da4ab8c9ea852cd25f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aSource: {fileID: 2001474062970163899}
+  aSound: {fileID: 8300000, guid: 485fb5233731c5743b246e6d8b02dee7, type: 3}
 --- !u!1001 &1076774557011492211
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -299,31 +314,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6918463314671046767, guid: de9a1abe57f9c7947b12ff438ba1b865, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5073983356942829575}
-    - targetCorrespondingSourceObject: {fileID: 6392405546960830813, guid: de9a1abe57f9c7947b12ff438ba1b865, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4644213334383630614}
   m_SourcePrefab: {fileID: 100100000, guid: de9a1abe57f9c7947b12ff438ba1b865, type: 3}
---- !u!1 &6216966641969757230 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6392405546960830813, guid: de9a1abe57f9c7947b12ff438ba1b865, type: 3}
-  m_PrefabInstance: {fileID: 1076774557011492211}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &4644213334383630614
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6216966641969757230}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58245f86ba8f6da4ab8c9ea852cd25f7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  aSource: {fileID: 2001474062970163899}
-  aSound: {fileID: 8300000, guid: 485fb5233731c5743b246e6d8b02dee7, type: 3}
-  confettiSpawned: {fileID: 0}
-  cannon: {fileID: 4018454430350489443, guid: 61e831527323e554c961c41d91031b67, type: 3}
 --- !u!4 &7330164570635597734 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7730570692881173205, guid: de9a1abe57f9c7947b12ff438ba1b865, type: 3}
