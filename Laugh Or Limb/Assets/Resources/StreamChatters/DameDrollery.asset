@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DameDrollery
   m_EditorClassIdentifier: 
   chatterName: DameDrollery
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.19045235, g: 0.70373493, b: 0.041502547, a: 1}
   positiveResponses: []
   neutralResponses:
   - To those who doubt, give the jester a chance. Laughter doth lighten the soul!

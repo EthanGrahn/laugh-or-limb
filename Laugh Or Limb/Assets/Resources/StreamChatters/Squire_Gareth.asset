@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Squire_Gareth
   m_EditorClassIdentifier: 
   chatterName: Squire_Gareth
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.57333237, g: 0.041182656, b: 0.6467829, a: 1}
   positiveResponses: []
   neutralResponses:
-  - "What ho! The jester hath arrived! Prepare for laughter, my comrades! \U0001F923\U0001F3AD"
+  - What ho! The jester hath arrived! Prepare for laughter, my comrades!
   negativeResponses: []

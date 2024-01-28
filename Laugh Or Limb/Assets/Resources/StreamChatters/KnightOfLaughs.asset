@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: KnightOfLaughs
   m_EditorClassIdentifier: 
   chatterName: KnightOfLaughs
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.06948926, g: 0.63234, b: 0.10489289, a: 1}
   positiveResponses:
-  - "\U0001F6E1\uFE0F\U0001F602 Break a jest, jester! Let laughter be our weapon
-    tonight!"
+  - Break a jest, jester! Let laughter be our weapon tonight!
   neutralResponses: []
   negativeResponses: []

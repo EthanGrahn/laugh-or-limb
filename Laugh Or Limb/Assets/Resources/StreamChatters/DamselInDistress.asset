@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: DamselInDistress
   m_EditorClassIdentifier: 
   chatterName: DamselInDistress
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.7313295, g: 0.0032359944, b: 0.3976438, a: 1}
   positiveResponses: []
   neutralResponses:
-  - "Oh, gallant knights, rescue me from this tower! I await a hero to save me from
-    my plight. \U0001F3F0\U0001F478"
+  - Oh, gallant knights, rescue me from this tower! I await a hero to save me from
+    my plight.
   negativeResponses: []

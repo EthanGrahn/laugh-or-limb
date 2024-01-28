@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: LordOfTheRealm
   m_EditorClassIdentifier: 
   chatterName: LordOfTheRealm
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.051553316, g: 0.12084351, b: 0.87042046, a: 1}
   positiveResponses:
   - The archery skills of this bowman art unparalleled! Bullseye, every time!
-  - 'Jester, begin thy japes, and let joy fill our halls! '
+  - Jester, begin thy japes, and let joy fill our halls!
   neutralResponses:
   - Hark, peasants! Gather round for the jester's jests!
   negativeResponses: []

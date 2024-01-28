@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: TavernTalesTraveler
   m_EditorClassIdentifier: 
   chatterName: TavernTalesTraveler
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.03330672, g: 0.86354786, b: 0.08388283, a: 1}
   positiveResponses: []
   neutralResponses:
   - Greetings from the local tavern! Let's see if the jester's tales can surpass

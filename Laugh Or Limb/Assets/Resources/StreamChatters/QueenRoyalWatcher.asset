@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: QueenRoyalWatcher
   m_EditorClassIdentifier: 
   chatterName: QueenRoyalWatcher
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.32992402, g: 0.94425714, b: 0.019429598, a: 1}
   positiveResponses:
-  - "Verily, this jester be making me laugh like a courtly fool! \U0001F602"
+  - Verily, this jester be making me laugh like a courtly fool!
   neutralResponses:
   - Watching the festivities from the royal chamber. Will the jester's jests amuse
     her majesty? #MedievalRoyalty

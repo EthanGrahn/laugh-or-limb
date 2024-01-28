@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: SorcerersApprentice
   m_EditorClassIdentifier: 
   chatterName: SorcerersApprentice
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.81510925, g: 0.08685912, b: 0.9710555, a: 1}
   positiveResponses: []
   neutralResponses:
-  - "Witness my magical incantations! \U0001F52E\u2728 Which spell shall I cast next?"
+  - Witness my magical incantations! Which spell shall I cast next?
   negativeResponses: []

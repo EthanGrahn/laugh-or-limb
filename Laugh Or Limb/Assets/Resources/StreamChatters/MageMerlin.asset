@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: MageMerlin
   m_EditorClassIdentifier: 
   chatterName: MageMerlin
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.04480241, g: 0.773015, b: 0.96674746, a: 1}
   positiveResponses:
-  - "The jester's antics are a welcome respite from the spells and potions. Carry
-    on, good fool! \U0001F9D9\u200D\u2642\uFE0F\U0001F0CF"
+  - The jester's antics are a welcome respite from the spells and potions. Carry
+    on, good fool!
   neutralResponses:
-  - "\U0001F9D9\u200D\u2642\uFE0F Beware, noble folk! Dark forces stir in the shadows.
-    Keep vigilant, for a quest may be upon us."
+  - Beware, noble folk! Dark forces stir in the shadows. Keep vigilant, for a quest
+    may be upon us.
   negativeResponses: []

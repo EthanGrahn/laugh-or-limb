@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: Sir_Gawain
   m_EditorClassIdentifier: 
   chatterName: Sir_Gawain
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.043905187, g: 0.9566397, b: 0.8553124, a: 1}
   positiveResponses: []
   neutralResponses:
-  - "A jester, truly? Mayhaps this diversion will lift our spirits amidst the mundane.
-    \U0001F939\u200D\u2642\uFE0F\U0001F5E1\uFE0F"
+  - A jester, truly? Mayhaps this diversion will lift our spirits amidst the mundane.
   negativeResponses: []

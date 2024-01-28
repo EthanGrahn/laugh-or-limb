@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: JesterAdmirer
   m_EditorClassIdentifier: 
   chatterName: JesterAdmirer
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.019638754, g: 0.1617112, b: 0.84541506, a: 1}
   positiveResponses:
-  - "Oh, the jester is my favorite! \U0001F921 Ready for some tomfoolery and hilarity!"
+  - Oh, the jester is my favorite! Ready for some tomfoolery and hilarity!
   - This jester never fails to amuse! Clowns of yore would envy such jesting prowess.
   neutralResponses: []
   negativeResponses: []
