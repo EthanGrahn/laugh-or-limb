@@ -8,15 +8,16 @@ using TMPro;
 public class Dialogue : MonoBehaviour
 {
     [Serializable]
-    public struct dialogue
+    public struct conversationpiece
     {
-        public Sprite emote;
+        public string name;
         public string text;
-    }
+    };
 
     [SerializeField]
-    private List<dialogue> dialogues;
-    public TextMeshPro text;
+    private List<conversationpiece> dialogues;
+    public TMP_Text text;
+    public TMP_Text name;
     public Image textbox;
     //public Sprite kingFace;
 
@@ -34,23 +35,20 @@ public class Dialogue : MonoBehaviour
 
     private void Begin()
     {
-        textbox.enabled = true;
+        textbox.gameObject.SetActive(true);
         StartCoroutine(nameof(DisplayDialogue));
-    }
-
-    private bool advanceDialogue()
-    {
-        return true;
     }
 
     IEnumerator DisplayDialogue()
     {
-        for(int i = 0; i < dialogues.Count; i++)
+        for (int i = 0; i < dialogues.Count; i++)
         {
-            //kingFace = dialogues[i].emote;
+            name.text = dialogues[i].name;
             text.text = dialogues[i].text;
-            yield return new WaitUntil(advanceDialogue);
+            yield return null;
+            yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
         }
+        textbox.gameObject.SetActive(false);
         LookSwap.endDialogue();
     }
 }

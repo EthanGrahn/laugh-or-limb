@@ -11,22 +11,33 @@ public class FadeToBlack : MonoBehaviour
     public Image BlackOutSquare;
 
     public bool fade = true;
+    public bool start;
 
-    void Start()
+    private void Start()
     {
-        StartCoroutine(FadeBlackOutSquare());
-    }
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.S))
+        if(start)
         {
-            StartCoroutine(FadeBlackOutSquare());
+            StartCoroutine(nameof(FadeBlackOutSquare));
         }
     }
 
+    private void OnEnable()
+    {
+        LookSwap.fade += Fading;
+    }
 
-    public IEnumerator FadeBlackOutSquare(bool fadeToBlack = true, int fadeSpeed = 1)
+    private void OnDisable()
+    {
+        LookSwap.fade -= Fading;
+    }
+
+    private void Fading()
+    {
+        StartCoroutine(nameof(FadeBlackOutSquare),.5f);
+    }
+
+
+    public IEnumerator FadeBlackOutSquare(/*bool fadeToBlack = true,*/ float fadeSpeed = 1)
     {
         Color objectColor = BlackOutSquare.color;
         float fadeAmount;
@@ -53,7 +64,7 @@ public class FadeToBlack : MonoBehaviour
                 BlackOutSquare.color = objectColor;
                 yield return null;
             }
-
+            fade = false;
           }
 
 
