@@ -72,6 +72,22 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Trap
       objectReference: {fileID: 0}
+    - target: {fileID: 9043264698519129883, guid: 74f58608f8a86d341a89797cd9add8af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043264698519129883, guid: 74f58608f8a86d341a89797cd9add8af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043264698519129883, guid: 74f58608f8a86d341a89797cd9add8af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 9043264698519129883, guid: 74f58608f8a86d341a89797cd9add8af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: -259972160606440404, guid: 74f58608f8a86d341a89797cd9add8af, type: 3}
@@ -84,26 +100,26 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 74f58608f8a86d341a89797cd9add8af, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5365568360556054167}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 74f58608f8a86d341a89797cd9add8af, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 6042959233366503478}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 74f58608f8a86d341a89797cd9add8af, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7134910606487413580}
+    - targetCorrespondingSourceObject: {fileID: -7235015103121818086, guid: 74f58608f8a86d341a89797cd9add8af, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3893817694645834580}
   m_SourcePrefab: {fileID: 100100000, guid: 74f58608f8a86d341a89797cd9add8af, type: 3}
---- !u!1 &1876607296373304863 stripped
+--- !u!1 &959959060347088212 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 74f58608f8a86d341a89797cd9add8af, type: 3}
+  m_CorrespondingSourceObject: {fileID: -7235015103121818086, guid: 74f58608f8a86d341a89797cd9add8af, type: 3}
   m_PrefabInstance: {fileID: 1642236843656319822}
   m_PrefabAsset: {fileID: 0}
---- !u!60 &5365568360556054167
-PolygonCollider2D:
+--- !u!61 &3893817694645834580
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1876607296373304863}
+  m_GameObject: {fileID: 959959060347088212}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -131,7 +147,7 @@ PolygonCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0000000037252903, y: -0.0000000018626456}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -141,16 +157,13 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.005162943, y: 0.07145158}
-      - {x: -0.00033743976, y: 0.0968842}
-      - {x: -0.004973736, y: 0.07130863}
-      - {x: -0.0043516606, y: 0.01575194}
-      - {x: -0.010219989, y: -0.006069443}
-      - {x: 0.00951948, y: -0.0041092434}
-      - {x: 0.0046197698, y: 0.015170246}
-  m_UseDelaunayMesh: 0
+  m_Size: {x: 0.018100003, y: 0.09721213}
+  m_EdgeRadius: 0
+--- !u!1 &1876607296373304863 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 74f58608f8a86d341a89797cd9add8af, type: 3}
+  m_PrefabInstance: {fileID: 1642236843656319822}
+  m_PrefabAsset: {fileID: 0}
 --- !u!50 &6042959233366503478
 Rigidbody2D:
   serializedVersion: 4
@@ -163,7 +176,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 4
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -177,7 +190,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 2
 --- !u!114 &7134910606487413580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,3 +203,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2da47f3ff26d2714bbc0f1a5789c808e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: -50
+  rBody: {fileID: 6042959233366503478}

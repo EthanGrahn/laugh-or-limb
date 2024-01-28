@@ -840,8 +840,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9defe35e30234d84594255ef4d4379df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  body: {fileID: 2809831026492293934}
-  head: {fileID: 4073788849579529896}
+  body: {fileID: 4073788849579529896}
+  head: {fileID: 2809831026492293934}
   power: 1000
   gravity: 40
 --- !u!114 &5281256784520460417
@@ -856,7 +856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 168bcd7b393e6af438afcb4605a0e868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rBody: {fileID: 0}
+  rBody: {fileID: 4073788849579529896}
   incSpeed: 4
   currSpeed: 0
   minSpeed: -16

@@ -13,25 +13,29 @@ public class FlyForward : MonoBehaviour
     }
     void Update()
     {
-        if(bFly)
+        if (bFly)
         {
             //rBody.AddForce(transform.right * speed, ForceMode2D.Force);
             transform.position += transform.right * speed * Time.deltaTime;
             //transform.position += new Vector3(speed * Time.deltaTime, transform.position.y, transform.position.z);
         }
+        else
+        {
+            rBody.isKinematic = false;
+            transform.position = GetComponentInParent<Transform>().position;
+            
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-         if(collision.gameObject.tag == "Player")
-        {
-          //  collision.gameObject.transform.SetParent(this.gameObject.transform);
+            this.gameObject.transform.SetParent(collision.gameObject.transform);
             StartCoroutine(nameof(stopper));
-        }
     }
 
     private IEnumerator stopper()
     {
-        yield return new WaitForSeconds(3f);
         bFly = false;
+        yield return new WaitForSeconds(0.7f);
+        Destroy(this.gameObject);
     }
 }

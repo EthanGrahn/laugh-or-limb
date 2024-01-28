@@ -1,17 +1,29 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class FungeonGenerator : MonoBehaviour
 {
+    public static FungeonGenerator Instance;
+
     public List<GameObject> components = new List<GameObject>();
     public int heightToGenerate = 20;
     [SerializeField] private GameObject assetIndicatorPrefab;
-    [SerializeField] private List<GameObject> playerChoiceObstacles = new List<GameObject>();
+    [SerializeField] private List<FungeonObstacle> playerChoiceObstacles = new List<FungeonObstacle>();
     [SerializeField] private List<GameObject> otherObstacles = new List<GameObject>();
+
     void Start()
     {
-        
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(this);
+        }
     }
 
     // Update is called once per frame
