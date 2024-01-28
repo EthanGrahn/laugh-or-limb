@@ -8,6 +8,11 @@ public class CatapultArrow : MonoBehaviour
     bool fired = false;
     float mouseDownTimer;
 
+    private void Start()
+    {
+        neoArrow = nArrow.GetComponent<Image>();
+    }
+
     void Update()
     {
         if (Input.GetMouseButtonDown(0))
