@@ -60,6 +60,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -4668074107676032118, guid: ec60d6fab58db8144af7566f4b6ce908, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.92387956
+      objectReference: {fileID: 0}
+    - target: {fileID: -4668074107676032118, guid: ec60d6fab58db8144af7566f4b6ce908, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4668074107676032118, guid: ec60d6fab58db8144af7566f4b6ce908, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4668074107676032118, guid: ec60d6fab58db8144af7566f4b6ce908, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.38268343
+      objectReference: {fileID: 0}
+    - target: {fileID: -4668074107676032118, guid: ec60d6fab58db8144af7566f4b6ce908, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 45
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ec60d6fab58db8144af7566f4b6ce908, type: 3}
       propertyPath: m_Name
       value: Bouncy platform
@@ -69,25 +89,30 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2100000, guid: a0ea9f940425db34c801a4574ba7a379, type: 2}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: -5731229141766309534, guid: ec60d6fab58db8144af7566f4b6ce908, type: 3}
+    - {fileID: -2793727289926329592, guid: ec60d6fab58db8144af7566f4b6ce908, type: 3}
+    - {fileID: 1507767883509144192, guid: ec60d6fab58db8144af7566f4b6ce908, type: 3}
+    - {fileID: 3779745573541866595, guid: ec60d6fab58db8144af7566f4b6ce908, type: 3}
+    - {fileID: -8513424388201257645, guid: ec60d6fab58db8144af7566f4b6ce908, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ec60d6fab58db8144af7566f4b6ce908, type: 3}
+    - targetCorrespondingSourceObject: {fileID: -7917291961305824890, guid: ec60d6fab58db8144af7566f4b6ce908, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 842219530262565195}
+      addedObject: {fileID: 4245198443578992852}
   m_SourcePrefab: {fileID: 100100000, guid: ec60d6fab58db8144af7566f4b6ce908, type: 3}
---- !u!1 &2640306739116813215 stripped
+--- !u!1 &4198772968238749512 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ec60d6fab58db8144af7566f4b6ce908, type: 3}
+  m_CorrespondingSourceObject: {fileID: -7917291961305824890, guid: ec60d6fab58db8144af7566f4b6ce908, type: 3}
   m_PrefabInstance: {fileID: 2910778004851234510}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &842219530262565195
+--- !u!61 &4245198443578992852
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2640306739116813215}
+  m_GameObject: {fileID: 4198772968238749512}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -115,7 +140,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0018403605, y: -0.00046538678}
+  m_Offset: {x: -0.000000004656613, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -125,5 +150,5 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.05086165, y: 0.011300219}
+  m_Size: {x: 0.050599992, y: 0.011066298}
   m_EdgeRadius: 0

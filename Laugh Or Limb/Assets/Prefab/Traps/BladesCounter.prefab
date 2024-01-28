@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7126434338549799305}
   - component: {fileID: 2092745291170573167}
   m_Layer: 0
-  m_Name: Spinner Blades
+  m_Name: BladesCounter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -150,15 +150,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1895415452037415212, guid: 0dc2332f442ea7449bb533116dd331bb, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1895415452037415212, guid: 0dc2332f442ea7449bb533116dd331bb, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1895415452037415212, guid: 0dc2332f442ea7449bb533116dd331bb, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1895415452037415212, guid: 0dc2332f442ea7449bb533116dd331bb, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -176,6 +176,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 5decf12bd366ebd458fbe16eb27be394, type: 2}
+    - target: {fileID: 8854056032472953519, guid: 0dc2332f442ea7449bb533116dd331bb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

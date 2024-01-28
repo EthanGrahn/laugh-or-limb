@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f894587d148a274280f095b0eb108cf, type: 3}
-  m_Name: Hammer
+  m_Name: CoalSlantL
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6918463314671046767, guid: de9a1abe57f9c7947b12ff438ba1b865, type: 3}
-  positionOne: 1
-  positionTwo: 1
+  prefab: {fileID: 8739372017877458756, guid: 1c6e1c9d3d59c0e41b461c729ef7471a, type: 3}
+  positionOne: 0
+  positionTwo: 0
   positionThree: 1
   positionFour: 1
