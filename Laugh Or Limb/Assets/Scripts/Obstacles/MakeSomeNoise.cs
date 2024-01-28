@@ -29,7 +29,7 @@ public class MakeSomeNoise : MonoBehaviour
             confettiSpawned.GetComponent<ParticleSystem>().Play();
             bSpawn = true;
         }
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(6f);
         Destroy(confettiSpawned);
         bSpawn = false;
     }
