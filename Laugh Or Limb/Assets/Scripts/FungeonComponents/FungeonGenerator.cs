@@ -55,7 +55,7 @@ public class FungeonGenerator : MonoBehaviour
             }
             for (int j = 3; j >= 0; j--)
             {
-                GameObject obstacle = GetRandomObstacleForPosition(j);
+                GameObject obstacle = GetRandomObstacleForPosition(j, true);
                 if (obstacle != null)
                     currentComponent.SetObstacleAtLocation(j, obstacle);
             }
