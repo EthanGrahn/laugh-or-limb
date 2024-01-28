@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor.Events;
+using UnityEngine.Events;
+using System.Linq;
 
 public class PointCalculation : MonoBehaviour
 {
@@ -17,6 +20,11 @@ public class PointCalculation : MonoBehaviour
     private Rigidbody2D rBody;
 
     public GameObject displayer;
+
+    public UnityEvent<float> OnBoardUpdate = new UnityEvent<float>();
+    public UnityEvent<float> OnDecay = new UnityEvent<float>();
+
+    List<int> pointStack = new List<int>();
 
     private void Start()
     {
@@ -36,10 +44,29 @@ public class PointCalculation : MonoBehaviour
             }
             else Debug.Log("hit wall :)");
             iPoints = (int)fTemp;
+
+            //Add/Decay points
+            pointStack.Add(iPoints);
+            StartCoroutine(nameof(pointDecay));
+
             //send iPoints to a display script
             displayer.GetComponent<PointsDisplay>().updateDisplay(iPoints);
 
             //send iPoints to the chatmeter
+
+            //send to scoreBoard
+            OnBoardUpdate.Invoke(fTemp);
         }
+    }
+
+    private void Update()
+    {
+        
+    }
+    private IEnumerator pointDecay()
+    {
+        yield return new WaitForSeconds(0.5f);
+        OnDecay.Invoke(pointStack.Sum());
+        pointStack.RemoveAt(pointStack.Count - 1);
     }
 }

@@ -24,9 +24,8 @@ public class PointsDisplay : MonoBehaviour
 
     private IEnumerator resetDisplay()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(0.5f);
         currPoints = 0;
         DisplayScore.enabled = false;
-        
     }
 }

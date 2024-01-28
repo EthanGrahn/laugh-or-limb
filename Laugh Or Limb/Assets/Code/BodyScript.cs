@@ -8,7 +8,6 @@ using UnityEngine.Events;
 public class BodyScript : MonoBehaviour
 {
     public Rigidbody2D body, head;
-    public BoxCollider2D R_leg, L_leg;
     public float power = 100f;
     public float gravity = 40f;
     float mouseDownTimer;
