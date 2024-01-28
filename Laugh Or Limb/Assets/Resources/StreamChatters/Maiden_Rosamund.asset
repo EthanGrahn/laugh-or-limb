@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Maiden_Rosamund
   m_EditorClassIdentifier: 
   chatterName: Maiden_Rosamund
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.12150732, g: 0.11466809, b: 0.8005364, a: 1}
   positiveResponses: []
   neutralResponses:
-  - "A song, good jester! Sing of tales untold and adventures bold! \U0001F3A4\U0001F30C"
+  - A song, good jester! Sing of tales untold and adventures bold!
   negativeResponses: []

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: BardicTunes
   m_EditorClassIdentifier: 
   chatterName: BardicTunes
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.013152071, g: 0.58916044, b: 0.74004126, a: 1}
   positiveResponses: []
   neutralResponses:
-  - "\U0001F3B6 Strums lute Gather 'round, friends! I shall serenade thee with a
-    ballad of valor and triumph! \U0001F3B5\U0001F31F"
+  - Strums lute Gather 'round, friends! I shall serenade thee with a ballad of valor
+    and triumph!
   negativeResponses: []

@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: Blacksmith_Henry
   m_EditorClassIdentifier: 
   chatterName: Blacksmith_Henry
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.027416294, g: 0.94769424, b: 0.6801269, a: 1}
   positiveResponses: []
   neutralResponses: []
   negativeResponses:
-  - "If only the jester's wit were as sharp as my blades! A bit more tempering needed!
-    \U0001F52A\U0001F914"
+  - If only the jester's wit were as sharp as my blades! A bit more tempering needed!

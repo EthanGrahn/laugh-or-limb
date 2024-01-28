@@ -12,13 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 127763612cddcdd4aaa0f9faf40a2d38, type: 3}
   m_Name: MaidenOfWhimsy
   m_EditorClassIdentifier: 
-  chatterName: Curtsying in anticipation! Jester, bring forth the laughter that lightens
-    our medieval hearts!
-  color: {r: 0, g: 0, b: 1, a: 1}
+  chatterName: MaidenOfWhimsy
+  color: {r: 0.32487538, g: 0.79570866, b: 0.05164921, a: 1}
   positiveResponses:
-  - "Oh, the jester is my favorite! \U0001F921 Ready for some tomfoolery and hilarity!"
-  - Curtsying in anticipation! Jester, bring forth the laughter that lightens our
-    medieval hearts!
+  - Oh, the jester is my favorite! Ready for some tomfoolery and hilarity!
+  - "Curtsying in anticipation! Jester, bring forth the laughter that lightens our
+    medieval hearts!\U0001F60A"
   - A curtsy of appreciation! The jester has woven a tapestry of joy in our medieval
     hearts.
   neutralResponses: []

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: KnightSirOwen
   m_EditorClassIdentifier: 
   chatterName: KnightSirOwen
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.065067925, g: 0.95698243, b: 0.25893703, a: 1}
   positiveResponses:
-  - "To the victors go the spoils! A fine tourney indeed. Well-fought, all! \u2694\uFE0F\U0001F4AA"
+  - To the victors go the spoils! A fine tourney indeed. Well-fought, all!
   neutralResponses: []
   negativeResponses: []

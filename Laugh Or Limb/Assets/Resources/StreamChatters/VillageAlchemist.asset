@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: VillageAlchemist
   m_EditorClassIdentifier: 
   chatterName: VillageAlchemist
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.17065984, g: 0.052180264, b: 0.9942133, a: 1}
   positiveResponses: []
   neutralResponses:
-  - "Fear not, intrepid adventurers! I've brewed potions of healing and strength
-    for thee all. Imbibe wisely! \U0001F9EA\U0001F343"
+  - Fear not, intrepid adventurers! I've brewed potions of healing and strength for
+    thee all. Imbibe wisely!
   negativeResponses: []

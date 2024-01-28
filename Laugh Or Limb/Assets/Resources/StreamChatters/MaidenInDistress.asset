@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MaidenInDistress
   m_EditorClassIdentifier: 
   chatterName: MaidenInDistress
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.5631598, g: 0.025690937, b: 0.7028368, a: 1}
   positiveResponses: []
   neutralResponses:
   - Greetings, noble lords and ladies! Any brave knights willing to rescue a damsel

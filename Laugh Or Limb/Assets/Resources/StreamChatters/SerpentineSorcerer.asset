@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SerpentineSorcerer
   m_EditorClassIdentifier: 
   chatterName: SerpentineSorcerer
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.022601405, g: 0.056785215, b: 0.61413336, a: 1}
   positiveResponses: []
   neutralResponses:
   - Even wizards need a break from spells. Let's see if the jester can conjure laughter!

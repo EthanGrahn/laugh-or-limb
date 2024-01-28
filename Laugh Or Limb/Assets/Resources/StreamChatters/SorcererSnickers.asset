@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SorcererSnickers
   m_EditorClassIdentifier: 
   chatterName: SorcererSnickers
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.22016977, g: 0.010150397, b: 0.7622619, a: 1}
   positiveResponses: []
   neutralResponses:
   - Casting a spell for a hilarious show! May the jester's jokes be enchanting!

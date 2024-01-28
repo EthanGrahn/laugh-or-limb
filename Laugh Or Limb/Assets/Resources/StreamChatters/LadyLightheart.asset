@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: LadyLightheart
   m_EditorClassIdentifier: 
   chatterName: LadyLightheart
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.12509382, g: 0.098022945, b: 0.6565141, a: 1}
   positiveResponses:
   - Oh, how splendid! Jester, entertain us well!
   neutralResponses: []

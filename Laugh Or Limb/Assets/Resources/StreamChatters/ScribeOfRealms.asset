@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ScribeOfRealms
   m_EditorClassIdentifier: 
   chatterName: ScribeOfRealms
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.9911558, g: 0.03138905, b: 0.037211765, a: 1}
   positiveResponses: []
   neutralResponses:
   - Recording this mirthful moment in the annals of our kingdom. May the jester's

@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: MinstrelMelodies
   m_EditorClassIdentifier: 
   chatterName: MinstrelMelodies
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.6222378, g: 0.030584725, b: 0.051640067, a: 1}
   positiveResponses:
   - Oh, how splendid! Jester, entertain us well!
   neutralResponses:
   - Strumming the lute for thy entertainment. What ballad wouldst thou hear tonight?
   negativeResponses:
-  - "This jester better be worth the coin I paid for his presence. \U0001F928\U0001F4B0"
+  - This jester better be worth the coin I paid for his presence.

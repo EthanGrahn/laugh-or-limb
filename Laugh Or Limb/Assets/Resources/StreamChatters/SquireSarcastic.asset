@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SquireSarcastic
   m_EditorClassIdentifier: 
   chatterName: SquireSarcastic
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.0944425, g: 0.7841053, b: 0.045736767, a: 1}
   positiveResponses: []
   neutralResponses: []
   negativeResponses:

@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: Lady_Eleanor
   m_EditorClassIdentifier: 
   chatterName: Lady_Eleanor
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.09890233, g: 0.9413496, b: 0.48278502, a: 1}
   positiveResponses: []
   neutralResponses:
-  - "I hope the jester's wit matches his colorful attire. Let the show commence!
-    \U0001F308\U0001F451"
+  - I hope the jester's wit matches his colorful attire. Let the show commence!
   negativeResponses: []
