@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1f894587d148a274280f095b0eb108cf, type: 3}
-  m_Name: HammerClockWise
+  m_Name: CounterRamp
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6232882837956533122, guid: ec4b0a57a4f70c04f8123b4737c21d34, type: 3}
-  positionOne: 0
+  prefab: {fileID: 7238866278553195362, guid: 06af43c2d85fb29488b41983064d4011, type: 3}
+  positionOne: 1
   positionTwo: 1
   positionThree: 1
-  positionFour: 0
+  positionFour: 1

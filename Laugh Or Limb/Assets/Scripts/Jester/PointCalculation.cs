@@ -34,12 +34,17 @@ public class PointCalculation : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
        // Debug.Log("Collided");
-        if(other.gameObject.tag == "Wall" || other.gameObject.tag == "Trap")
+        if(other.gameObject.tag == "Wall" || other.gameObject.tag == "Trap" || other.gameObject.tag == "Bounce")
         {
             fTemp = rBody.velocity.magnitude * limbScore;
             if (other.gameObject.tag == "Trap")
             {
                 fTemp *= 2;
+                Debug.Log("hit trap!");
+            }
+            if (other.gameObject.tag == "Trap")
+            {
+                fTemp *= 1.5f;
                 Debug.Log("hit trap!");
             }
             else Debug.Log("hit wall :)");
