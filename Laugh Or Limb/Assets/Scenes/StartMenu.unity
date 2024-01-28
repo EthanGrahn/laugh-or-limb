@@ -792,6 +792,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1850340906648264655, guid: 5d52ee4d44346fb43914d874e9521331, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.3064
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850340906648264655, guid: 5d52ee4d44346fb43914d874e9521331, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.3064
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850340906648264655, guid: 5d52ee4d44346fb43914d874e9521331, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.3064
+      objectReference: {fileID: 0}
+    - target: {fileID: 1850340906648264655, guid: 5d52ee4d44346fb43914d874e9521331, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.26
+      objectReference: {fileID: 0}
     - target: {fileID: 2249102397296588648, guid: 5d52ee4d44346fb43914d874e9521331, type: 3}
       propertyPath: m_Name
       value: Scene
@@ -1442,6 +1458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startGame: ThroneRoom
   credits: Credits
+  mainMenu: 
 --- !u!1 &1834896978
 GameObject:
   m_ObjectHideFlags: 0
