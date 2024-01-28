@@ -73,6 +73,10 @@ PrefabInstance:
       value: Trap
       objectReference: {fileID: 0}
     - target: {fileID: 4884089336853408759, guid: 5bdea13aa08f0c547a0b10e03eb4bec7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4884089336853408759, guid: 5bdea13aa08f0c547a0b10e03eb4bec7, type: 3}
       propertyPath: m_LocalRotation.w
       value: -0.9659258
       objectReference: {fileID: 0}
