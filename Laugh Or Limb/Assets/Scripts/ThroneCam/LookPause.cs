@@ -8,6 +8,7 @@ public class LookPause : MonoBehaviour
 {
     private CinemachineDollyCart cart;
     private bool hasPaused = false;
+    private bool hasOpened = false;
 
     public static Action OPENDOORS = delegate { };
 
@@ -23,9 +24,10 @@ public class LookPause : MonoBehaviour
             cart.m_Position = 1;
             hasPaused = true;
         }
-        if(cart.m_Position == 3)
+        if(cart.m_Position == 3 && !hasOpened)
         {
             OPENDOORS();
+            hasOpened = true;
         }
     }
 }
