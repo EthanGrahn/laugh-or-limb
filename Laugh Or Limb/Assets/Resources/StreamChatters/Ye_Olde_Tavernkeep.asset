@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Ye_Olde_Tavernkeep
   m_EditorClassIdentifier: 
   chatterName: Ye_Olde_Tavernkeep
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.94486296, g: 0.104580514, b: 0.6241159, a: 1}
   positiveResponses:
-  - "Pint of ale for everyone who finds the jester's jokes amusing! \U0001F37A\U0001F604"
+  - Pint of ale for everyone who finds the jester's jokes amusing!
   neutralResponses: []
   negativeResponses: []

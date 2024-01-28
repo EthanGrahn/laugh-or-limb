@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: CastleGuardian
   m_EditorClassIdentifier: 
   chatterName: CastleGuardian
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.7982129, g: 0.0970552, b: 0.32435256, a: 1}
   positiveResponses: []
   neutralResponses:
-  - "Halt! Who goes there? State thy Twitch username or face banishment from the
-    realm! \U0001F6AB\U0001F3F0"
+  - Halt! Who goes there? State thy Twitch username or face banishment from the realm!
   negativeResponses: []

@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: LadyArcheress
   m_EditorClassIdentifier: 
   chatterName: LadyArcheress
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.10159967, g: 0.7791587, b: 0.8128373, a: 1}
   positiveResponses:
   - The archery skills of this bowman art unparalleled! Bullseye, every time!
   neutralResponses:
-  - "Hail and well met! Shall we embark on another quest this eve? \U0001F3F9\U0001F304"
+  - Hail and well met! Shall we embark on another quest this eve?
   - I pray the jester's wit matches the accuracy of mine arrows. Let the show commence!
   - Mayhaps the jester's wit can rival my marksmanship. Let the jesting games begin!
   negativeResponses:

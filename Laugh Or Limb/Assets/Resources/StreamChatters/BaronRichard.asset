@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: BaronRichard
   m_EditorClassIdentifier: 
   chatterName: BaronRichard
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.0735527, g: 0.9174404, b: 0.9282594, a: 1}
   positiveResponses:
-  - "A feast for all in the great hall tonight! Let us celebrate the victories and
-    camaraderie. \U0001F357\U0001F377"
+  - A feast for all in the great hall tonight! Let us celebrate the victories and
+    camaraderie.
   neutralResponses: []
   negativeResponses: []

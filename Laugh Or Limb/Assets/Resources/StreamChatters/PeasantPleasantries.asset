@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: PeasantPleasantries
   m_EditorClassIdentifier: 
   chatterName: PeasantPleasantries
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.48344666, g: 0.045504075, b: 0.7227585, a: 1}
   positiveResponses:
   - Even us peasants be gathered 'round the village square, ready for a chuckle!
   neutralResponses: []

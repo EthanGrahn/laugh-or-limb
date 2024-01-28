@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: NobleLordChatKeeper
   m_EditorClassIdentifier: 
   chatterName: NobleLordChatKeeper
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.9017898, g: 0.0076943818, b: 0.8565067, a: 1}
   positiveResponses: []
   neutralResponses:
   - All ye in this chat, swear fealty to the king by typing "I pledge my allegiance
-    to the crown!
+    to the crown!"
   negativeResponses: []

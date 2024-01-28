@@ -13,11 +13,10 @@ MonoBehaviour:
   m_Name: LordKnight92
   m_EditorClassIdentifier: 
   chatterName: LordKnight92
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.057555266, g: 0.99925506, b: 0.314935, a: 1}
   positiveResponses:
   - A round of applause for our jester! Let the jesting commence!
   neutralResponses:
   - Hail, good folk! Ready thy jests, for the jester is about to grace us with merriment!
   negativeResponses:
-  - "If only the jester's wit were as sharp as my blades! A bit more tempering needed!
-    \U0001F52A\U0001F914"
+  - If only the jester's wit were as sharp as my blades! A bit more tempering needed!

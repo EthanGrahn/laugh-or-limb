@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: RogueRoderick
   m_EditorClassIdentifier: 
   chatterName: RogueRoderick
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.8804015, g: 0.11976749, b: 0.40400237, a: 1}
   positiveResponses: []
   neutralResponses:
-  - "Sneakier than a shadow, I slipped past the guards to catch a glimpse of the
-    festivities. Shh! \U0001F575\uFE0F\u200D\u2642\uFE0F\U0001F319"
+  - Sneakier than a shadow, I slipped past the guards to catch a glimpse of the festivities.
+    Shh!
   negativeResponses: []

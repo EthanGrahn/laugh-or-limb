@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: KnightlyBanter
   m_EditorClassIdentifier: 
   chatterName: KnightlyBanter
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.44759342, g: 0.015642088, b: 0.9278514, a: 1}
   positiveResponses:
   - I begrudgingly admit, the jester's jests are as sharp as my blade. Well played!
   neutralResponses:

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: ScribeOfScrolls
   m_EditorClassIdentifier: 
   chatterName: ScribeOfScrolls
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.08604093, g: 0.008150353, b: 0.64648926, a: 1}
   positiveResponses:
-  - "Verily, this jester be making me laugh like a courtly fool! \U0001F602"
+  - Verily, this jester be making me laugh like a courtly fool!
   neutralResponses:
   - 'I present thee with a riddle, fair chat: What hath four legs in the morning,
     two in the afternoon, and three at night?'

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Baron_Brutus
   m_EditorClassIdentifier: 
   chatterName: Baron_Brutus
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.5060351, g: 0.044878546, b: 0.94700134, a: 1}
   positiveResponses: []
   neutralResponses: []
-  negativeResponses: []
+  negativeResponses:
+  - This jester better be worth the coin I paid for his presence.

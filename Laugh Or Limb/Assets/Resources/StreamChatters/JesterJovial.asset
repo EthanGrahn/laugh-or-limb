@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: JesterJovial
   m_EditorClassIdentifier: 
   chatterName: JesterJovial
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.05151255, g: 0.48116496, b: 0.6915585, a: 1}
   positiveResponses:
   - This jester never fails to amuse! Clowns of yore would envy such jesting prowess.
   neutralResponses:
-  - "Ho ho! Make merry, for the stream be filled with joy and laughter! \U0001F921\U0001F3AD"
+  - "Ho ho! Make merry, for the stream be filled with joy and laughter!\U0001F603"
   negativeResponses:
   - Ah, a heckler in the midst! Fear not, I shall jest my way into thy heart!

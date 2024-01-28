@@ -8,18 +8,6 @@ public class FungeonComponent : MonoBehaviour
     [SerializeField] private Transform bottomConnector;
     [SerializeField] private List<Transform> assetLocations = new List<Transform>();
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public Vector3 GetConnectionPoint()
     {
         return bottomConnector.position;
@@ -30,13 +18,9 @@ public class FungeonComponent : MonoBehaviour
         transform.position = other.GetConnectionPoint();
     }
 
-    public void ConfigureAssetLocations(GameObject prefab)
+    public void SetObstacleAtLocation(int location, GameObject prefab)
     {
-        GameObject go;
-        foreach (Transform t in assetLocations)
-        {
-            go = Instantiate(prefab);
-            go.transform.position = t.position + Vector3.back * 2;
-        }
+        GameObject go = Instantiate(prefab);
+        go.transform.position = assetLocations[location].position + Vector3.back * 2;
     }
 }
