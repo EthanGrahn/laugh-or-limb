@@ -6,17 +6,27 @@ using TMPro;
 
 public class StreamUI : MonoBehaviour
 {
+    public static StreamUI Instance;
+
     public VerticalLayoutGroup chatGroup;
     public GameObject messagePrefab;
     public StreamChatter.Sentiment currentSentiment = StreamChatter.Sentiment.NEUTRAL;
+    public TextMeshProUGUI scoreIndicator;
 
     private StreamChatter[] chatters;
     private List<StreamChatter> positiveChatters = new List<StreamChatter>();
     private List<StreamChatter> neutralChatters = new List<StreamChatter>();
     private List<StreamChatter> negativeChatters = new List<StreamChatter>();
 
+    private int currentScore = 0;
+
     void Start()
     {
+        if (Instance == null)
+            Instance = this;
+        else
+            Destroy(this);
+
         chatters = Resources.LoadAll<StreamChatter>("StreamChatters");
         foreach (var chatter in chatters)
         {
@@ -57,5 +67,11 @@ public class StreamUI : MonoBehaviour
             default:
                 return null;
         }
+    }
+
+    public void AddPoints(int amount)
+    {
+        currentScore += amount;
+        scoreIndicator.text = string.Format("viewers: {0}", currentScore);
     }
 }
