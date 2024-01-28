@@ -27,9 +27,11 @@ public class BodyScript : MonoBehaviour
         {
             return;
         }
-        if (trap == "Bounce")
+        if (trap.gameObject.tag == "Bounce")
         {
-            body.AddForce(transform.up * power / 4, ForceMode2D.Impulse);
+            Transform pad = trap.gameObject.transform;
+
+            body.AddForce(pad.up * -trap.relativeVelocity * 4f, ForceMode2D.Impulse);
         }
     }
 
