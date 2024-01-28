@@ -11,6 +11,15 @@ public class FadeToBlack : MonoBehaviour
     public Image BlackOutSquare;
 
     public bool fade = true;
+    public bool start;
+
+    private void Start()
+    {
+        if(start)
+        {
+            StartCoroutine(nameof(FadeBlackOutSquare));
+        }
+    }
 
     private void OnEnable()
     {
