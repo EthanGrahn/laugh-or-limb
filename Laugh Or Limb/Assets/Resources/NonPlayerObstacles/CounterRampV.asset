@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CounterRampV
   m_EditorClassIdentifier: 
   prefab: {fileID: 3558129073428798251, guid: c3b62a4393eea954293550620f95a058, type: 3}
-  positionOne: 1
+  positionOne: 0
   positionTwo: 1
   positionThree: 1
   positionFour: 1
