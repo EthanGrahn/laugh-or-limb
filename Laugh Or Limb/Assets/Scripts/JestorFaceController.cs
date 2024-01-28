@@ -12,21 +12,20 @@ public class JestorFaceController : MonoBehaviour
         hurtFace.SetActive(false);
     }
 
-    // Update is called once per frame
-    void Update()
+    private IEnumerator swapFace()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        neutralFace.SetActive(false);
+        hurtFace.SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        neutralFace.SetActive(true);
+        hurtFace.SetActive(false);
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag != "Player")
         {
-            if (neutralFace.activeSelf)
-            {
-                neutralFace.SetActive(false);
-                hurtFace.SetActive(true);
-            }
-            else
-            {
-                neutralFace.SetActive(true);
-                hurtFace.SetActive(false);
-            }
+            StartCoroutine(nameof(swapFace));
         }
     }
+
 }

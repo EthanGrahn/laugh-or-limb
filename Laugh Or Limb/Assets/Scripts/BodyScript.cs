@@ -8,6 +8,9 @@ using UnityEngine.Events;
 public class BodyScript : MonoBehaviour
 {
     public Rigidbody2D body, head;
+
+    public GameObject normalFace, hurtFace;
+
     public float power = 100f;
     public float gravity = 40f;
     float mouseDownTimer;
@@ -18,6 +21,7 @@ public class BodyScript : MonoBehaviour
     void Start()
     {
         Physics2D.gravity = new Vector2(0, -gravity);
+        normalFace.SetActive(true);
     }
 
     public void trapIncounter(Collision2D trap)
@@ -34,12 +38,28 @@ public class BodyScript : MonoBehaviour
         }
     }
 
+    private IEnumerator swapFace()
+    {
+        normalFace.SetActive(false);
+        hurtFace.SetActive(true);
+        yield return new WaitForSeconds(0.5f); 
+        normalFace.SetActive(true);
+        hurtFace.SetActive(false);
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Bounce")
         {
             body.AddForce(transform.up * power / 2, ForceMode2D.Impulse);
         }
+        StartCoroutine(nameof(swapFace));
+        /*
+        if (collision.gameObject.tag != "Player")
+        {
+            StartCoroutine(nameof(swapFace));
+        }
+        */
     }
 
     // Update is called once per frame
