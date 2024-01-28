@@ -15,5 +15,5 @@ MonoBehaviour:
   prefab: {fileID: 2640306739116813215, guid: 2d4ae9429f89a834aaab018c340b77f3, type: 3}
   positionOne: 1
   positionTwo: 1
-  positionThree: 1
-  positionFour: 1
+  positionThree: 0
+  positionFour: 0

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HammerClockWise
   m_EditorClassIdentifier: 
   prefab: {fileID: 6232882837956533122, guid: ec4b0a57a4f70c04f8123b4737c21d34, type: 3}
-  positionOne: 1
+  positionOne: 0
   positionTwo: 1
   positionThree: 1
-  positionFour: 1
+  positionFour: 0
