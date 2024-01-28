@@ -85,12 +85,30 @@ PrefabInstance:
       value: Spinning Blades
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: -3142405868406905038, guid: 8f5c5587f1b817940987a98f70fba992, type: 3}
+    - {fileID: -253674941142225386, guid: 8f5c5587f1b817940987a98f70fba992, type: 3}
+    - {fileID: 6147352175773068163, guid: 8f5c5587f1b817940987a98f70fba992, type: 3}
+    - {fileID: 3309868096826352713, guid: 8f5c5587f1b817940987a98f70fba992, type: 3}
+    - {fileID: -3953075681684984995, guid: 8f5c5587f1b817940987a98f70fba992, type: 3}
+    - {fileID: -3133498875991405556, guid: 8f5c5587f1b817940987a98f70fba992, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8f5c5587f1b817940987a98f70fba992, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8854056032472953519}
+    - targetCorrespondingSourceObject: {fileID: -8513424388201257645, guid: 8f5c5587f1b817940987a98f70fba992, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2896237642882668179}
+    - targetCorrespondingSourceObject: {fileID: -8513424388201257645, guid: 8f5c5587f1b817940987a98f70fba992, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8232214844956189349}
+    - targetCorrespondingSourceObject: {fileID: -3957782524123411102, guid: 8f5c5587f1b817940987a98f70fba992, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5012869009916402556}
+    - targetCorrespondingSourceObject: {fileID: -3957782524123411102, guid: 8f5c5587f1b817940987a98f70fba992, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2287190348302289841}
   m_SourcePrefab: {fileID: 100100000, guid: 8f5c5587f1b817940987a98f70fba992, type: 3}
 --- !u!1 &1226684317343308694 stripped
 GameObject:
@@ -162,3 +180,159 @@ PolygonCollider2D:
       - {x: 0.058777682, y: 0.002179809}
       - {x: 0.061383747, y: 0.012101049}
   m_UseDelaunayMesh: 0
+--- !u!1 &1449414354995413908 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8513424388201257645, guid: 8f5c5587f1b817940987a98f70fba992, type: 3}
+  m_PrefabInstance: {fileID: 2145797215380530887}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &2896237642882668179
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449414354995413908}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.00026826048, y: -0.0078112083}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.010742639, y: 0.009907557}
+  m_EdgeRadius: 0
+--- !u!50 &8232214844956189349
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449414354995413908}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0
+--- !u!1 &6112588598264425381 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3957782524123411102, guid: 8f5c5587f1b817940987a98f70fba992, type: 3}
+  m_PrefabInstance: {fileID: 2145797215380530887}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &5012869009916402556
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6112588598264425381}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.00027656276, y: -0.008045145}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 0.010689359, y: 0.01098142}
+  m_EdgeRadius: 0
+--- !u!50 &2287190348302289841
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6112588598264425381}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 0

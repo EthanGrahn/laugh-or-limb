@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -425565630206218756, guid: d3bdf91b585940b4dae1802ae5a27b0a, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 6bc9b8975b20dea409f1f5a90973bf06, type: 2}
     - target: {fileID: 919132149155446097, guid: d3bdf91b585940b4dae1802ae5a27b0a, type: 3}
       propertyPath: m_Name
       value: Pie
