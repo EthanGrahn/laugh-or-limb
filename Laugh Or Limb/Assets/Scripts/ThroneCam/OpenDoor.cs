@@ -11,8 +11,9 @@ public class OpenDoor : MonoBehaviour
     private AnimationCurve aCurve;
     [SerializeField]
     private float speed;
+    public bool calling;
 
-    public static Action Fall = delegate { };
+    public static Action<bool> Fall = delegate { };
     private void OnEnable()
     {
         LookPause.OPENDOORS += Open;
@@ -32,13 +33,13 @@ public class OpenDoor : MonoBehaviour
     IEnumerator AnimateDoors()
     {
         yield return new WaitForSeconds(2);
-        while(x < 1)
+        while (x < 1)
         {
             transform.rotation = Quaternion.Lerp(Quaternion.Euler(0, 0, 0), Quaternion.Euler(endRotation, 0, 0), aCurve.Evaluate(x));
             x += Time.deltaTime * speed;
             yield return new WaitForEndOfFrame();
         }
         yield return new WaitForSeconds(2);
-        Fall();
+        Fall(calling);
     }
 }
