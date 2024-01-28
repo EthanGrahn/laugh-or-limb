@@ -1089,7 +1089,6 @@ GameObject:
   m_Component:
   - component: {fileID: 972970480}
   - component: {fileID: 972970479}
-  - component: {fileID: 972970478}
   - component: {fileID: 972970477}
   - component: {fileID: 972970476}
   m_Layer: 0
@@ -1177,14 +1176,6 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!81 &972970478
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 972970475}
-  m_Enabled: 1
 --- !u!20 &972970479
 Camera:
   m_ObjectHideFlags: 0
@@ -1465,8 +1456,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: d38258cf63794c24ebfeed8e50a89096, type: 3}
+  m_Resource: {fileID: 8300000, guid: d38258cf63794c24ebfeed8e50a89096, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1826,6 +1817,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 654564693194490546, guid: a6c633c68462a1c4ea26af04c4d83bfc, type: 3}
+      propertyPath: kingSpeak
+      value: 
+      objectReference: {fileID: 1030045479}
     - target: {fileID: 654564693194490546, guid: a6c633c68462a1c4ea26af04c4d83bfc, type: 3}
       propertyPath: dialogues.Array.size
       value: 8
@@ -2824,7 +2819,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1840369109}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.55384195, y: 0.21778564, z: -0.16616374, w: 0.7862685}
+  m_LocalRotation: {x: 0.55384195, y: 0.21778561, z: -0.16616364, w: 0.78626853}
   m_LocalPosition: {x: -0.58556116, y: 4.649539, z: 12.745868}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

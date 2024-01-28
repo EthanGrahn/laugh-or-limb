@@ -19,6 +19,7 @@ public class Dialogue : MonoBehaviour
     public TMP_Text text;
     public TMP_Text name;
     public Image textbox;
+    public AudioSource kingSpeak;
     //public Sprite kingFace;
 
     public static Action nextDialogue = delegate { };
@@ -45,6 +46,7 @@ public class Dialogue : MonoBehaviour
         {
             name.text = dialogues[i].name;
             text.text = dialogues[i].text;
+            kingSpeak.Play();
             yield return null;
             yield return new WaitUntil(() => Input.GetMouseButtonDown(0));
         }
