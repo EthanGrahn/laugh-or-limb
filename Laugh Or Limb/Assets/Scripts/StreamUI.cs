@@ -92,12 +92,12 @@ public class StreamUI : MonoBehaviour
         {
             total += point;
         }
-        if (total >= 400)
+        if (total >= 5000)
         {
             currentSentiment = StreamChatter.Sentiment.POSITIVE;
             OnSentimentChange.Invoke(4);
         }
-        else if (total >= 150)
+        else if (total >= 2000)
         {
             currentSentiment = StreamChatter.Sentiment.NEUTRAL;
             OnSentimentChange.Invoke(0);

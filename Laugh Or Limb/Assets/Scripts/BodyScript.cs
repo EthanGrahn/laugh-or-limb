@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.Animations;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class BodyScript : MonoBehaviour
 {
@@ -48,6 +50,12 @@ public class BodyScript : MonoBehaviour
         hurtFace.SetActive(false);
     }
 
+    private IEnumerator EndTheLevel()
+    {
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene("EndScreen");
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Bounce")
@@ -66,6 +74,14 @@ public class BodyScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (launched && atBottom)
+            return;
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            atBottom = true;
+            StartCoroutine(EndTheLevel());
+        }
         if (Input.GetKeyDown(KeyCode.Space))
         {
             body.bodyType = RigidbodyType2D.Dynamic; 

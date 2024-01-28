@@ -1533,7 +1533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d93407ba518562c4793a70456809def3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startGame: TheFungeon
+  startGame: ThroneRoom
   credits: Credits
   mainMenu: 
 --- !u!1 &1834896978
