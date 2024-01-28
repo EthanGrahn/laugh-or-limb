@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: Wanderer_Travels
   m_EditorClassIdentifier: 
   chatterName: Wanderer_Travels
-  color: {r: 0, g: 0, b: 1, a: 1}
-  positiveResponses:
-  - positive 1
+  color: {r: 0.0958242, g: 0.21819387, b: 0.82876587, a: 1}
+  positiveResponses: []
   neutralResponses:
   - Greetings, fellow wanderers! Where should my next quest lead me?
   negativeResponses:

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SirKnight92
   m_EditorClassIdentifier: 
   chatterName: SirKnight92
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.07836516, g: 0.07028282, b: 0.69488806, a: 1}
   positiveResponses: []
   neutralResponses:
   - Hail, fellow knights! Who else is ready for today's jousting tournament? #MedievalTwitch

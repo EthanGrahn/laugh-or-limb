@@ -13,13 +13,11 @@ MonoBehaviour:
   m_Name: SerKnight23
   m_EditorClassIdentifier: 
   chatterName: SerKnight23
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.41035146, g: 0.09110118, b: 0.82053787, a: 1}
   positiveResponses:
-  - "To the victors go the spoils! A fine tourney indeed. Well-fought, all!To the
-    victors go the spoils! A fine tourney indeed. Well-fought, all! \u2694\uFE0F\U0001F4AA
-    \u2694\uFE0F\U0001F4AA"
+  - To the victors go the spoils! A fine tourney indeed. Well-fought, all!To the
+    victors go the spoils! A fine tourney indeed. Well-fought, all!
   neutralResponses:
   - Greetings, noble viewers! Who else is tuning in from their castle?
   negativeResponses:
-  - "If only the jester's wit were as sharp as my blades! A bit more tempering needed!
-    \U0001F52A\U0001F914"
+  - If only the jester's wit were as sharp as my blades! A bit more tempering needed!

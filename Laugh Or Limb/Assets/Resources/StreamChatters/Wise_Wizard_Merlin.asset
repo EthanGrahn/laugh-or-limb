@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Wise_Wizard_Merlin
   m_EditorClassIdentifier: 
   chatterName: Wise_Wizard_Merlin
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.09823942, g: 0.9462495, b: 0.22664237, a: 1}
   positiveResponses:
-  - "The jester's antics are a welcome respite from the spells and potions. Carry
-    on, good fool! \U0001F9D9\u200D\u2642\uFE0F\U0001F0CF"
+  - The jester's antics are a welcome respite from the spells and potions. Carry
+    on, good fool!
   neutralResponses: []
   negativeResponses: []

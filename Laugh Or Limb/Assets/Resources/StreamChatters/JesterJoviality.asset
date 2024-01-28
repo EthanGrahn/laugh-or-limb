@@ -13,13 +13,10 @@ MonoBehaviour:
   m_Name: JesterJoviality
   m_EditorClassIdentifier: 
   chatterName: JesterJoviality
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.52185947, g: 0.0356708, b: 0.71046424, a: 1}
   positiveResponses: []
   neutralResponses:
-  - "\U0001F939\u200D\u2642\uFE0F Welcome, noble audience! Prepare thyselves for
-    mirth and folly! \U0001F939\u200D\u2642\uFE0F"
-  - "\U0001F3AD Fear not, good people, for laughter is a potion with the power to
-    unite! \U0001F3AD"
-  - "\U0001F0CF Pray, forgive my tongue, for it doth wag in pursuit of laughter!
-    First jest incoming! \U0001F0CF"
+  - Welcome, noble audience! Prepare thyselves for mirth and folly!
+  - Fear not, good people, for laughter is a potion with the power to unite!
+  - Pray, forgive my tongue, for it doth wag in pursuit of laughter! First jest incoming!
   negativeResponses: []

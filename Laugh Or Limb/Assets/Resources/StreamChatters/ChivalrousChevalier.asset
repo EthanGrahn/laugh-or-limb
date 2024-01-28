@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ChivalrousChevalier
   m_EditorClassIdentifier: 
   chatterName: ChivalrousChevalier
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.086610526, g: 0.72562885, b: 0.9062514, a: 1}
   positiveResponses:
   - Huzzah! The jouster hath unseated his opponent in the jousting tournament!
   neutralResponses: []

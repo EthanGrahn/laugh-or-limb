@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: DragonSlayer9001
   m_EditorClassIdentifier: 
   chatterName: DragonSlayer9001
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.6849569, g: 0.01831678, b: 0.12907083, a: 1}
   positiveResponses: []
   neutralResponses:
-  - "Beware, noble warriors! A mighty dragon awaits us in the next quest. Prepare
-    thy potions and courage! \U0001F409\U0001F525"
+  - Beware, noble warriors! A mighty dragon awaits us in the next quest. Prepare
+    thy potions and courage!
   negativeResponses: []

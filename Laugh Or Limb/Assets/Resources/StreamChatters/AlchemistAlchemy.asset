@@ -13,11 +13,10 @@ MonoBehaviour:
   m_Name: AlchemistAlchemy
   m_EditorClassIdentifier: 
   chatterName: AlchemistAlchemy
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.08692356, g: 0.5938893, b: 0.69024706, a: 1}
   positiveResponses:
   - Jester, begin thy japes, and let joy fill our halls!
   neutralResponses:
-  - "\U0001F9EA Brewing potions and elixirs in my alchemy lab. Any requests, kind
-    souls?"
+  - ' Brewing potions and elixirs in my alchemy lab. Any requests, kind souls?'
   negativeResponses:
   - I'll be impressed if this jester can outwit a court jester from yonder kingdom!

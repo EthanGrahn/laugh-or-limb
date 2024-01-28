@@ -13,9 +13,8 @@ MonoBehaviour:
   m_Name: Lord_Knight1
   m_EditorClassIdentifier: 
   chatterName: Lord_Knight1
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.0462546, g: 0.8278237, b: 0.69494015, a: 1}
   positiveResponses: []
   neutralResponses:
-  - "Greetings, good people! Ready thyselves for an evening of merriment and jest!
-    \U0001F3F0\U0001F0CF"
+  - Greetings, good people! Ready thyselves for an evening of merriment and jest!
   negativeResponses: []

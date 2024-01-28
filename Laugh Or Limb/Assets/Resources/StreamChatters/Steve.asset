@@ -12,17 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 127763612cddcdd4aaa0f9faf40a2d38, type: 3}
   m_Name: Steve
   m_EditorClassIdentifier: 
-  chatterName: Steve
-  chatterColor: {r: 0.26415092, g: 0.60617596, b: 1, a: 1}
+  chatterName: Steve.bot
+  color: {r: 0.048990853, g: 0.02039672, b: 0.74975336, a: 1}
   positiveResponses:
-  - positive 1
-  - positive 2
-  - positive 3
+  - The virtual medieval Twitch chat continues to revel in the jester's performance,
+    sharing laughter and merriment across the kingdom.
   neutralResponses:
-  - neutral 1
-  - neutral 2
-  - neutral 3
+  - The virtual medieval Twitch chat continues to revel in the jester's performance,
+    sharing laughter and merriment across the kingdom.
   negativeResponses:
-  - negative 1
-  - negative 2
-  - negative 3
+  - The virtual medieval Twitch chat continues to revel in the jester's performance,
+    sharing laughter and merriment across the kingdom.

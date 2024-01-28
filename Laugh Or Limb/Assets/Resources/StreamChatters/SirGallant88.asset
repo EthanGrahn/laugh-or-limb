@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SirGallant88
   m_EditorClassIdentifier: 
   chatterName: SirGallant88
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.00855536, g: 0.5994986, b: 0.69673187, a: 1}
   positiveResponses: []
   neutralResponses:
   - To the jester's jests, I say! Bring forth thy wit and mirth, for laughter is

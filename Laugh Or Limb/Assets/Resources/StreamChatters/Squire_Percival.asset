@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Squire_Percival
   m_EditorClassIdentifier: 
   chatterName: Squire_Percival
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.055393066, g: 0.7479381, b: 0.87480766, a: 1}
   positiveResponses:
-  - "My lord, the jester's humor is as sharp as thy sword! A true delight! \U0001F606\u2694\uFE0F"
+  - My lord, the jester's humor is as sharp as thy sword! A true delight!
   neutralResponses: []
   negativeResponses: []

@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: GoblinSlayer147
   m_EditorClassIdentifier: 
   chatterName: GoblinSlayer147
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.0025772776, g: 0.723408, b: 0.6115964, a: 1}
   positiveResponses: []
   neutralResponses: []
   negativeResponses:
-  - "Why waste time with jesters when goblins roam free? Back to thy duties, good
-    folk! \U0001F479\U0001F3F9"
+  - Why waste time with jesters when goblins roam free? Back to thy duties, good
+    folk!

@@ -13,11 +13,10 @@ MonoBehaviour:
   m_Name: MaidenOfMirth
   m_EditorClassIdentifier: 
   chatterName: MaidenOfMirth
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.813766, g: 0.022647306, b: 0.48587164, a: 1}
   positiveResponses:
-  - "Verily, this jester be making me laugh like a courtly fool! \U0001F602"
+  - Verily, this jester be making me laugh like a courtly fool!
   neutralResponses:
   - Greetings, fellow courtiers! Excited for the jester's performance!
-  - "\U0001F31F Jester, dazzle us with thy jests and charm the grumpiest of lords!
-    \U0001F31F"
+  - Jester, dazzle us with thy jests and charm the grumpiest of lords!
   negativeResponses: []

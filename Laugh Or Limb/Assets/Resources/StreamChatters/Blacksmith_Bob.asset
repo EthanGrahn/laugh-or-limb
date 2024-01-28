@@ -13,10 +13,10 @@ MonoBehaviour:
   m_Name: Blacksmith_Bob
   m_EditorClassIdentifier: 
   chatterName: ' Blacksmith_Bob'
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.31033254, g: 0.065524824, b: 0.64402795, a: 1}
   positiveResponses:
-  - "A feast for all in the great hall tonight! Let us celebrate the victories and
-    camaraderie. \U0001F357\U0001F377"
+  - A feast for all in the great hall tonight! Let us celebrate the victories and
+    camaraderie.
   neutralResponses:
   - Taking a break from forging swords to enjoy some jests. Don't disappoint, jester!
   negativeResponses:

@@ -13,12 +13,10 @@ MonoBehaviour:
   m_Name: SerKnight42
   m_EditorClassIdentifier: 
   chatterName: SerKnight42
-  color: {r: 0, g: 0, b: 1, a: 1}
+  color: {r: 0.06884682, g: 0.7164984, b: 0.02713165, a: 1}
   positiveResponses:
-  - "\U0001F6E1\uFE0F\U0001F602 Break a jest, jester! Let laughter be our weapon
-    tonight!"
+  - Break a jest, jester! Let laughter be our weapon tonight!
   neutralResponses:
-  - "Greetings, noble comrades! What ho, fair streamer! \U0001F6E1\uFE0F\u2694\uFE0F"
+  - Greetings, noble comrades! What ho, fair streamer!
   negativeResponses:
-  - "Fear not, GoblinSlayer147! We shall revel in merriment before the next battle!
-    \U0001F923\U0001F6E1\uFE0F"
+  - Fear not, GoblinSlayer147! We shall revel in merriment before the next battle!

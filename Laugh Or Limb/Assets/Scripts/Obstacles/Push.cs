@@ -8,7 +8,6 @@ public class Push : MonoBehaviour
     private float pushForce;
     [SerializeField]
     private bool bVert;
-    int fling = 0;
     private void OnCollisionEnter2D(Collision2D other)
     {
         if(other.gameObject.tag == "Player")
