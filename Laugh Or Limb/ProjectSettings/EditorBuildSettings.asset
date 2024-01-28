@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TheFungeon.unity
     guid: a6979fa0ecac1ea47bfc24d1c5e6c90e
+  - enabled: 1
+    path: Assets/Scenes/EndScreen.unity
+    guid: 0ebcbfcdee3bd494888b36df8549eac3
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

@@ -420,7 +420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d93407ba518562c4793a70456809def3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startGame: ThroneRoom
+  startGame: TheFungeon
   credits: Credits
   mainMenu: StartMenu
 --- !u!114 &331706498
@@ -1944,7 +1944,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 331706497}
         m_TargetAssemblyTypeName: StartAndQuit, Assembly-CSharp
-        m_MethodName: EndGame
+        m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
