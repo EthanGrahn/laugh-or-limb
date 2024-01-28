@@ -21,7 +21,7 @@ public class BodyScript : MonoBehaviour
         Physics2D.gravity = new Vector2(0, -gravity);
     }
 
-    public void trapIncounter(string trap)
+    public void trapIncounter(Collision2D trap)
     {
         if (trap == null)
         {
@@ -29,7 +29,7 @@ public class BodyScript : MonoBehaviour
         }
         if (trap == "Bounce")
         {
-            body.AddForce(transform.up * power / 2, ForceMode2D.Impulse);
+            body.AddForce(transform.up * power / 4, ForceMode2D.Impulse);
         }
     }
 
