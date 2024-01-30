@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 127763612cddcdd4aaa0f9faf40a2d38, type: 3}
+  m_Name: MageMerlin
+  m_EditorClassIdentifier: 
+  chatterName: MageMerlin
+  color: {r: 0.04480241, g: 0.773015, b: 0.96674746, a: 1}
+  positiveResponses:
+  - The jester's antics are a welcome respite from the spells and potions. Carry
+    on, good fool!
+  neutralResponses:
+  - Beware, noble folk! Dark forces stir in the shadows. Keep vigilant, for a quest
+    may be upon us.
+  negativeResponses: []

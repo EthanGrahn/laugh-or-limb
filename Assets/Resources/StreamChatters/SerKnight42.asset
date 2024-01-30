@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 127763612cddcdd4aaa0f9faf40a2d38, type: 3}
+  m_Name: SerKnight42
+  m_EditorClassIdentifier: 
+  chatterName: SerKnight42
+  color: {r: 0.06884682, g: 0.7164984, b: 0.02713165, a: 1}
+  positiveResponses:
+  - Break a jest, jester! Let laughter be our weapon tonight!
+  neutralResponses:
+  - Greetings, noble comrades! What ho, fair streamer!
+  negativeResponses:
+  - Fear not, GoblinSlayer147! We shall revel in merriment before the next battle!

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/StartMenu.unity
+    guid: 0ba9452b36a9a554d9c493b0eec1c740
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: a6e1c8027a8de2e438a2f4ddd469e533
+  - enabled: 1
+    path: Assets/Scenes/ThroneRoom.unity
+    guid: 2b6488be1f801234d90c56d324c7dbef
+  - enabled: 1
+    path: Assets/Scenes/TheFungeon.unity
+    guid: a6979fa0ecac1ea47bfc24d1c5e6c90e
+  - enabled: 1
+    path: Assets/Scenes/EndScreen.unity
+    guid: 0ebcbfcdee3bd494888b36df8549eac3
+  m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

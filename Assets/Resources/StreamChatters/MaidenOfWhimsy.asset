@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 127763612cddcdd4aaa0f9faf40a2d38, type: 3}
+  m_Name: MaidenOfWhimsy
+  m_EditorClassIdentifier: 
+  chatterName: MaidenOfWhimsy
+  color: {r: 0.32487538, g: 0.79570866, b: 0.05164921, a: 1}
+  positiveResponses:
+  - Oh, the jester is my favorite! Ready for some tomfoolery and hilarity!
+  - "Curtsying in anticipation! Jester, bring forth the laughter that lightens our
+    medieval hearts!\U0001F60A"
+  - A curtsy of appreciation! The jester has woven a tapestry of joy in our medieval
+    hearts.
+  neutralResponses: []
+  negativeResponses: []
