@@ -52,7 +52,7 @@ public class FungeonGenerator : MonoBehaviour
         FungeonComponent currentComponent;
         for (int i = heightToGenerate; i > 0; i--)
         {
-            go = Instantiate(components[0]);
+            go = Instantiate(components[UnityEngine.Random.Range(0, components.Count)]);
             currentComponent = go.GetComponent<FungeonComponent>();
             if (lastComponent != null)
             {

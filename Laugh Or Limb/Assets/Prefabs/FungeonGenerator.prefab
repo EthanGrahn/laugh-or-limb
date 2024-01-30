@@ -46,6 +46,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   components:
   - {fileID: 2710685893628855741, guid: add7904da0ab00f41ab46afa29599bb8, type: 3}
+  - {fileID: 2710685893628855741, guid: 8b626af5eee43b04bb5b8e4a662faadc, type: 3}
+  - {fileID: 2710685893628855741, guid: c5d93828bf4238246ac8be1e28fbf5bd, type: 3}
+  - {fileID: 2710685893628855741, guid: 5b141079e54d69e4193ab3d77ea04720, type: 3}
+  - {fileID: 2710685893628855741, guid: f764d102b9bc45b47bef6c082e29930c, type: 3}
+  - {fileID: 2710685893628855741, guid: 3de6132f35d0fe848ad1f1822609aa08, type: 3}
+  - {fileID: 2710685893628855741, guid: 55b7f6c96c514e64681307c7ee0308b6, type: 3}
+  - {fileID: 2710685893628855741, guid: dfe41a9800011084894ec5a3218e9a1d, type: 3}
+  - {fileID: 2710685893628855741, guid: dd1ab4578f245f047ac25046f68cce4e, type: 3}
+  - {fileID: 2710685893628855741, guid: fb0d70aa9dfcb38488021d900436aebe, type: 3}
+  - {fileID: 2710685893628855741, guid: 1ffc3bc5287b2154f9bbcc1abbde3259, type: 3}
   heightToGenerate: 20
   bottomComponent: {fileID: 9153822376196432899, guid: 990309c786bfbca45b328292113005c2, type: 3}
   assetIndicatorPrefab: {fileID: 3431899327229952711, guid: b6ecd3d75f79dc84fafc9622a2bf241e, type: 3}
